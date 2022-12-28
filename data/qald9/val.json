@@ -1,0 +1,7026 @@
+[
+   {
+      "id": "356",
+      "en_ques": "when did operation overlord commence?",
+      "en_key": "when, operation overlord, commence",
+      "de_ques": "wann wurde die operation overlord durchgef\u00fchrt?",
+      "de_key": "operation overlord, datum",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?d WHERE { res:Operation_Overlord dbo:date ?d }",
+      "entities": [
+         "Operation_Overlord"
+      ],
+      "relations": [
+         "date"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?d WHERE { res:Operation_Overlord dbo:date ?d }",
+      "question": "when did operation overlord commence",
+      "question_pos_tokens": [
+         "SCONJ",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         8,
+         1,
+         1,
+         1,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "aux",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         3,
+         3,
+         2,
+         3,
+         3,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "when",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "operation",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "over",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "lord",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "commence",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "357",
+      "en_ques": "what is the bridge with the longest span?",
+      "en_key": "bridge, longest span",
+      "de_ques": "welche br\u00fccke hat die l\u00e4ngste spannweite?",
+      "de_key": "br\u00fccke, l\u00e4ngste spannweite",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge ; dbo:mainspan ?s } ORDER BY DESC(?s) OFFSET 0 LIMIT 1",
+      "entities": [],
+      "relations": [
+         "Bridge",
+         "mainspan"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge ; dbo:mainspan ?s } ORDER BY DESC(?s) OFFSET 0 LIMIT 1",
+      "question": "what is the bridge with the longest span",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         2,
+         1,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "nsubj",
+         "prep",
+         "det",
+         "amod",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         5,
+         5,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "bridge",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "with",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "longest",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "span",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "358",
+      "en_ques": "is there a video game called battle chess?",
+      "en_key": "video game, battle chess",
+      "de_ques": "gibt es ein videospiel, das battle chess hei\u00dft?",
+      "de_key": "videospiel, battle chess",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { ?uri rdf:type dbo:VideoGame ; rdfs:label 'Battle Chess'@en }",
+      "entities": [],
+      "relations": [
+         "VideoGame"
+      ],
+      "fil_sparql": "ASK WHERE { ?uri rdf:type dbo:VideoGame ; rdfs:label 'Battle Chess'@en }",
+      "question": "is there a video game called battle chess",
+      "question_pos_tokens": [
+         "AUX",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         13,
+         1,
+         2,
+         2,
+         1,
+         7,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "expl",
+         "det",
+         "compound",
+         "attr",
+         "acl",
+         "compound",
+         "oprd"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         3,
+         2,
+         3,
+         5,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "there",
+            "pos": "PRON",
+            "dep-tok": "expl",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "a",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "video",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "game",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "called",
+            "pos": "VERB",
+            "dep-tok": "acl",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "battle",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "chess",
+            "pos": "NOUN",
+            "dep-tok": "oprd",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "359",
+      "en_ques": "who was buried in the great pyramid of giza?",
+      "en_key": "buried, great pyramid of giza",
+      "de_ques": "wer wurde in der cheops-pyramide begraben?",
+      "de_key": "cheops-pyramide, begraben",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { ?uri dbo:restingPlace dbr:Great_Pyramid_of_Giza }",
+      "entities": [
+         "Great_Pyramid_of_Giza"
+      ],
+      "relations": [
+         "restingPlace"
+      ],
+      "fil_sparql": "SELECT ?uri WHERE { ?uri dbo:restingPlace dbr:Great_Pyramid_of_Giza }",
+      "question": "who was buried in the great pyramid of giza",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PRON",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         7,
+         1,
+         1,
+         1,
+         1,
+         1,
+         3,
+         2
+      ],
+      "question_dep_ids": [
+         "nsubjpass",
+         "auxpass",
+         "ROOT",
+         "prep",
+         "det",
+         "amod",
+         "pobj",
+         "prep",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         2,
+         1,
+         2,
+         4,
+         4,
+         3,
+         4,
+         5,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubjpass",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "was",
+            "pos": "AUX",
+            "dep-tok": "auxpass",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "buried",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "3": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "great",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "pyramid",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "g",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": "iza",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "360",
+      "en_ques": "does the ford motor company have a manufacturing plant in malaysia?",
+      "en_key": "ford motor company, manufacturing plant, malaysia",
+      "de_ques": "hat ford eine frabik in malaysia?",
+      "de_key": "ford, fabrik, malaysia",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> ASK WHERE { ?uri dbo:assembly dbr:Malaysia ; dbo:manufacturer dbr:Ford_Motor_Company }",
+      "entities": [
+         "Malaysia",
+         "Ford_Motor_Company"
+      ],
+      "relations": [
+         "assembly",
+         "manufacturer"
+      ],
+      "fil_sparql": "ASK WHERE { ?uri dbo:assembly dbr:Malaysia ; dbo:manufacturer dbr:Ford_Motor_Company }",
+      "question": "does the ford motor company have a manufacturing plant in malaysia",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "ADP",
+         "X",
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         6,
+         5,
+         7,
+         1,
+         1,
+         2,
+         7,
+         1,
+         1,
+         2,
+         2,
+         2
+      ],
+      "question_dep_ids": [
+         "aux",
+         "det",
+         "compound",
+         "compound",
+         "compound",
+         "nsubj",
+         "ROOT",
+         "pobj",
+         "amod",
+         "dobj",
+         "prep",
+         "pobj",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         4,
+         3,
+         2,
+         2,
+         3,
+         4,
+         1,
+         6,
+         5,
+         4,
+         4,
+         6,
+         6,
+         6
+      ],
+      "mapping": {
+         "0": {
+            "token": "does",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 4
+         },
+         "1": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "for",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "d",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "motor",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "company",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "have",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "7": {
+            "token": "a",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "8": {
+            "token": "manufacturing",
+            "pos": "NOUN",
+            "dep-tok": "amod",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": "plant",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 4
+         },
+         "10": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "11": {
+            "token": "mal",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "12": {
+            "token": "ays",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "13": {
+            "token": "ia",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         }
+      }
+   },
+   {
+      "id": "361",
+      "en_ques": "did socrates influence aristotle?",
+      "en_key": "socrates, influence, aristotle",
+      "de_ques": "hat sokrates aristoteles beeinflusst?",
+      "de_key": "sokrates, beeinflusste, aristoteles",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Aristotle dbo:influencedBy res:Socrates }",
+      "entities": [
+         "Aristotle",
+         "Socrates"
+      ],
+      "relations": [
+         "influencedBy"
+      ],
+      "fil_sparql": "ASK WHERE { res:Aristotle dbo:influencedBy res:Socrates }",
+      "question": "did socrates influence aristotle",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "aux",
+         "nsubj",
+         "nsubj",
+         "ROOT",
+         "dobj",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         2,
+         2,
+         1,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "soc",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "rates",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "influence",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "4": {
+            "token": "arist",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "otle",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "362",
+      "en_ques": "how many children did benjamin franklin have?",
+      "en_key": "benjamin franklin, child",
+      "de_ques": "wieviele kinder hatte benjamin franklin?",
+      "de_key": "benjamin franklin, kinder",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { res:Benjamin_Franklin dbo:child ?uri }",
+      "entities": [
+         "Benjamin_Franklin"
+      ],
+      "relations": [
+         "child"
+      ],
+      "fil_sparql": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { res:Benjamin_Franklin dbo:child ?uri }",
+      "question": "how many children did benjamin franklin have",
+      "question_pos_tokens": [
+         "SCONJ",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         8,
+         1,
+         2,
+         1,
+         2,
+         2,
+         1,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "amod",
+         "nsubj",
+         "aux",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         2,
+         3,
+         4,
+         6,
+         5,
+         5,
+         6,
+         6,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "how",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "many",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "children",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 6
+         },
+         "4": {
+            "token": "ben",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "5": {
+            "token": "jamin",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "frank",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 6
+         },
+         "7": {
+            "token": "lin",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 6
+         },
+         "8": {
+            "token": "have",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "363",
+      "en_ques": "how tall is michael jordan?",
+      "en_key": "tall, michael jordan",
+      "de_ques": "wie gro\u00df ist michael jordan?",
+      "de_key": "gr\u00f6\u00dfe, michael jordan",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Michael_Jordan dbo:height ?num }",
+      "entities": [
+         "Michael_Jordan"
+      ],
+      "relations": [
+         "height"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?num WHERE { res:Michael_Jordan dbo:height ?num }",
+      "question": "how tall is michael jordan",
+      "question_pos_tokens": [
+         "SCONJ",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "ADP",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         8,
+         2,
+         1,
+         1,
+         2,
+         6,
+         2
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "acomp",
+         "ROOT",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj"
+      ],
+      "question_dep_lvl": [
+         2,
+         3,
+         1,
+         4,
+         4,
+         3,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "how",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "tall",
+            "pos": "ADJ",
+            "dep-tok": "acomp",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "3": {
+            "token": "m",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "ichael",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "j",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "ordan",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "364",
+      "en_ques": "in which uk city are the headquarters of the mi6?",
+      "en_key": "mi6, headquarters, city, uk",
+      "de_ques": "in welcher stadt im vereinigten k\u00f6nigreich ist das hauptquartier des mi6?",
+      "de_key": "mi6, hauptquartier, stadt, vereinigtes k\u00f6nigreich",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Secret_Intelligence_Service dbo:headquarter ?uri . ?uri dbo:country res:United_Kingdom }",
+      "entities": [
+         "Secret_Intelligence_Service",
+         "United_Kingdom"
+      ],
+      "relations": [
+         "headquarter",
+         "country"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Secret_Intelligence_Service dbo:headquarter ?uri . ?uri dbo:country res:United_Kingdom }",
+      "question": "in which uk city are the headquarters of the mi6",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "X",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NUM"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         5,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         10
+      ],
+      "question_dep_ids": [
+         "prep",
+         "pobj",
+         "compound",
+         "compound",
+         "nsubj",
+         "ROOT",
+         "det",
+         "attr",
+         "prep",
+         "det",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         4,
+         2,
+         3,
+         3,
+         4,
+         1,
+         5,
+         4,
+         5,
+         7,
+         6,
+         6
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "1": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "u",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "k",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "city",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "are",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "6": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "headquarters",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 7
+         },
+         "10": {
+            "token": "mi",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "11": {
+            "token": "6",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         }
+      }
+   },
+   {
+      "id": "365",
+      "en_ques": "who created family guy?",
+      "en_key": "create, family guy",
+      "de_ques": "wer hat sich family guy ausgedacht?",
+      "de_key": "family guy, erfinder",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Family_Guy dbo:creator ?uri }",
+      "entities": [
+         "Family_Guy"
+      ],
+      "relations": [
+         "creator"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Family_Guy dbo:creator ?uri }",
+      "question": "who created family guy",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "compound",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "created",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "family",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "guy",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "366",
+      "en_ques": "in which city does the chile route 68 end?",
+      "en_key": "city, chile route 68, ends",
+      "de_ques": "in welcher stadt h\u00f6rt die ruta 68 auf?",
+      "de_key": "stadt, aufh\u00f6ren, route 68",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Chile_Route_68 dbo:routeEnd ?uri }",
+      "entities": [
+         "Chile_Route_68"
+      ],
+      "relations": [
+         "routeEnd"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Chile_Route_68 dbo:routeEnd ?uri }",
+      "question": "in which city does the chile route 68 end",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         1,
+         1,
+         2,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "prep",
+         "pobj",
+         "nsubj",
+         "ROOT",
+         "det",
+         "compound",
+         "compound",
+         "dobj",
+         "nummod",
+         "npadvmod"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         3,
+         1,
+         4,
+         4,
+         4,
+         3,
+         5,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "city",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "does",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "4": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "ch",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "ile",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "route",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         },
+         "8": {
+            "token": "68",
+            "pos": "NUM",
+            "dep-tok": "nummod",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": "end",
+            "pos": "NOUN",
+            "dep-tok": "npadvmod",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "367",
+      "en_ques": "give me the grandchildren of elvis presley.",
+      "en_key": "elvis presley, grandchildren",
+      "de_ques": "gib mir die enkel von elvis presley.",
+      "de_key": "elvis presley, enkel",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Elvis_Presley dbo:child ?child . ?child dbo:child ?uri }",
+      "entities": [
+         "Elvis_Presley"
+      ],
+      "relations": [
+         "child",
+         "child"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Elvis_Presley dbo:child ?child . ?child dbo:child ?uri }",
+      "question": "give me the grandchildren of elvis presley.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "X",
+         "NOUN",
+         "PROPN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         1,
+         1,
+         2,
+         5,
+         1,
+         2,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "dobj",
+         "prep",
+         "compound",
+         "compound",
+         "pobj",
+         "pobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         2,
+         3,
+         5,
+         5,
+         4,
+         4,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "give",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "grandchildren",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "el",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "vis",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "pres",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "ley",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "368",
+      "en_ques": "when did the ming dynasty dissolve?",
+      "en_key": "dissolve, ming dynasty",
+      "de_ques": "wann endete die ming-dynastie?",
+      "de_key": "ende, ming-dynastie",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Ming_dynasty dbo:dissolutionDate ?date }",
+      "entities": [
+         "Ming_dynasty"
+      ],
+      "relations": [
+         "dissolutionDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?date WHERE { res:Ming_dynasty dbo:dissolutionDate ?date }",
+      "question": "when did the ming dynasty dissolve",
+      "question_pos_tokens": [
+         "SCONJ",
+         "NOUN",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         8,
+         1,
+         1,
+         7,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "aux",
+         "det",
+         "compound",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         3,
+         3,
+         2,
+         2,
+         3,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "when",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "ming",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "dynasty",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "dissolve",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "369",
+      "en_ques": "in which military conflicts did lawrence of arabia participate?",
+      "en_key": "lawrence of arabia, military conflict",
+      "de_ques": "an welchen milit\u00e4rischen auseinandersetzungen war lawrence von arabien beteiligt?",
+      "de_key": "lawrence von arabien, milit\u00e4rische auseinandersetzung",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:T._E._Lawrence dbo:battle ?uri }",
+      "entities": [
+         "T._E._Lawrence"
+      ],
+      "relations": [
+         "battle"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:T._E._Lawrence dbo:battle ?uri }",
+      "question": "in which military conflicts did lawrence of arabia participate",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         2,
+         1,
+         1,
+         1,
+         2,
+         1,
+         1,
+         2,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "prep",
+         "pobj",
+         "amod",
+         "nsubj",
+         "aux",
+         "nsubj",
+         "nsubj",
+         "prep",
+         "ROOT",
+         "pobj",
+         "pobj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         4,
+         2,
+         3,
+         4,
+         7,
+         7,
+         7,
+         5,
+         1,
+         6,
+         6,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "1": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "military",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "conflicts",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 7
+         },
+         "5": {
+            "token": "law",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 7
+         },
+         "6": {
+            "token": "rence",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 7
+         },
+         "7": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "ar",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "9": {
+            "token": "ab",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "10": {
+            "token": "ia",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "11": {
+            "token": "participate",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "370",
+      "en_ques": "what is the timezone in san pedro de atacama?",
+      "en_key": "timezone, san pedro de atacama",
+      "de_ques": "in welcher zeitzone liegt san pedro de atacama?",
+      "de_key": "zeitzone, san pedro de atacama",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:San_Pedro_de_Atacama dbo:timeZone ?uri }",
+      "entities": [
+         "San_Pedro_de_Atacama"
+      ],
+      "relations": [
+         "timeZone"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:San_Pedro_de_Atacama dbo:timeZone ?uri }",
+      "question": "what is the timezone in san pedro de atacama",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "X",
+         "X"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         2,
+         1,
+         2,
+         1,
+         2,
+         1,
+         2,
+         5,
+         5
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "nsubj",
+         "nsubj",
+         "prep",
+         "compound",
+         "nmod",
+         "nmod",
+         "nmod",
+         "pobj",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         2,
+         3,
+         5,
+         5,
+         5,
+         5,
+         4,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "time",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "zone",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "san",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "ped",
+            "pos": "PROPN",
+            "dep-tok": "nmod",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "ro",
+            "pos": "PROPN",
+            "dep-tok": "nmod",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": "de",
+            "pos": "X",
+            "dep-tok": "nmod",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "at",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "11": {
+            "token": "ac",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "12": {
+            "token": "ama",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "371",
+      "en_ques": "give me all books by william goldman with more than 300 pages.",
+      "en_key": "book, william goldman, pages, more than 300",
+      "de_ques": "gib mir alle b\u00fccher von william goldman mit mehr als 300 seiten.",
+      "de_key": "buch, william goldman, seiten, mehr als 300",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:William_Goldman ; dbo:numberOfPages ?x FILTER ( ?x > 300 ) }",
+      "entities": [
+         "William_Goldman"
+      ],
+      "relations": [
+         "Book",
+         "author",
+         "numberOfPages"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:William_Goldman ; dbo:numberOfPages ?x FILTER ( ?x > 300 ) }",
+      "question": "give me all books by william goldman with more than 300 pages.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "VERB",
+         "PROPN",
+         "ADV",
+         "NOUN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         1,
+         1,
+         1,
+         2,
+         1,
+         1,
+         2,
+         7,
+         2,
+         15,
+         1,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "dobj",
+         "agent",
+         "compound",
+         "compound",
+         "pobj",
+         "pobj",
+         "prep",
+         "amod",
+         "quantmod",
+         "nummod",
+         "pobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         2,
+         2,
+         5,
+         5,
+         4,
+         4,
+         2,
+         7,
+         7,
+         8,
+         6,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "give",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "all",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "books",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "by",
+            "pos": "ADP",
+            "dep-tok": "agent",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "will",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "iam",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "gold",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "man",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": "with",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "10": {
+            "token": "more",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 7
+         },
+         "11": {
+            "token": "than",
+            "pos": "ADP",
+            "dep-tok": "quantmod",
+            "dep-lvl": 7
+         },
+         "12": {
+            "token": "300",
+            "pos": "NUM",
+            "dep-tok": "nummod",
+            "dep-lvl": 8
+         },
+         "13": {
+            "token": "pages",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "14": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "372",
+      "en_ques": "what did bruce carver die from?",
+      "en_key": "bruce carver, die",
+      "de_ques": "woran ist bruce carver gestorben?",
+      "de_key": "bruce carver, todesursache",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Bruce_Carver dbo:deathCause ?uri }",
+      "entities": [
+         "Bruce_Carver"
+      ],
+      "relations": [
+         "deathCause"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Bruce_Carver dbo:deathCause ?uri }",
+      "question": "what did bruce carver die from",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "ADJ",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         2,
+         1,
+         11,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "pobj",
+         "aux",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "ROOT",
+         "prep"
+      ],
+      "question_dep_lvl": [
+         4,
+         3,
+         2,
+         2,
+         3,
+         3,
+         1,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "1": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "bru",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "ce",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "car",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "ver",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "die",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "7": {
+            "token": "from",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "373",
+      "en_ques": "which subsidiary of lufthansa serves both dortmund and berlin tegel?",
+      "en_key": "subsidiary, lufthansa, serve, dortmund, berlin tegel",
+      "de_ques": "welche tochtergesellschaft von lufthansa fliegt sowohl dortmund als auch berlin tegel an?",
+      "de_key": "tochtergesellschaft, lufthansa, anfliegen, dortmund, berlin tegel",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Lufthansa dbo:subsidiary ?uri . ?uri dbo:targetAirport res:Dortmund_Airport ; dbo:targetAirport res:Berlin_Tegel_Airport }",
+      "entities": [
+         "Lufthansa",
+         "Dortmund_Airport",
+         "Berlin_Tegel_Airport"
+      ],
+      "relations": [
+         "subsidiary",
+         "targetAirport",
+         "targetAirport"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Lufthansa dbo:subsidiary ?uri . ?uri dbo:targetAirport res:Dortmund_Airport ; dbo:targetAirport res:Berlin_Tegel_Airport }",
+      "question": "which subsidiary of lufthansa serves both dortmund and berlin tegel",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "X",
+         "NOUN",
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         1,
+         1,
+         2,
+         5,
+         1,
+         3,
+         1,
+         1,
+         1,
+         7,
+         1,
+         1,
+         2,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "det",
+         "nsubj",
+         "prep",
+         "pobj",
+         "pobj",
+         "det",
+         "pobj",
+         "cc",
+         "ROOT",
+         "det",
+         "cc",
+         "dobj",
+         "cc",
+         "compound",
+         "compound",
+         "conj",
+         "conj"
+      ],
+      "question_dep_lvl": [
+         2,
+         4,
+         2,
+         3,
+         3,
+         5,
+         3,
+         5,
+         1,
+         5,
+         5,
+         4,
+         5,
+         6,
+         6,
+         5,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "subsidiary",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "2": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "l",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "uf",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "th",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "ans",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "a",
+            "pos": "CCONJ",
+            "dep-tok": "cc",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "serves",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "9": {
+            "token": "both",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "d",
+            "pos": "CCONJ",
+            "dep-tok": "cc",
+            "dep-lvl": 5
+         },
+         "11": {
+            "token": "ortmund",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 4
+         },
+         "12": {
+            "token": "and",
+            "pos": "CCONJ",
+            "dep-tok": "cc",
+            "dep-lvl": 5
+         },
+         "13": {
+            "token": "ber",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "14": {
+            "token": "lin",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "15": {
+            "token": "te",
+            "pos": "PROPN",
+            "dep-tok": "conj",
+            "dep-lvl": 5
+         },
+         "16": {
+            "token": "gel",
+            "pos": "PROPN",
+            "dep-tok": "conj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "374",
+      "en_ques": "does abraham lincoln's death place have a website?",
+      "en_key": "abraham lincoln, death place, website",
+      "de_ques": "hat abraham lincolns sterbeort eine webseite?",
+      "de_key": "abraham lincoln, sterbeort, webseite",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Abraham_Lincoln dbo:deathPlace ?p . ?p dbo:website ?w }",
+      "entities": [
+         "Abraham_Lincoln"
+      ],
+      "relations": [
+         "deathPlace",
+         "website"
+      ],
+      "fil_sparql": "ASK WHERE { res:Abraham_Lincoln dbo:deathPlace ?p . ?p dbo:website ?w }",
+      "question": "does abraham lincoln's death place have a website",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "AUX",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         1,
+         1,
+         13,
+         1,
+         1,
+         1,
+         2,
+         2
+      ],
+      "question_dep_ids": [
+         "aux",
+         "compound",
+         "compound",
+         "poss",
+         "poss",
+         "case",
+         "compound",
+         "nsubj",
+         "ROOT",
+         "det",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         4,
+         2,
+         2,
+         3,
+         3,
+         2,
+         3,
+         4,
+         1,
+         5,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "does",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 4
+         },
+         "1": {
+            "token": "ab",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "raham",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "l",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "incoln",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "'s",
+            "pos": "PART",
+            "dep-tok": "case",
+            "dep-lvl": 2
+         },
+         "6": {
+            "token": "death",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "place",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "have",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "9": {
+            "token": "a",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "website",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "375",
+      "en_ques": "did elvis presley have children?",
+      "en_key": "elvis presley, children",
+      "de_ques": "hatte elvis presley kinder?",
+      "de_key": "elvis presley, kinder",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Elvis_Presley dbo:child ?uri }",
+      "entities": [
+         "Elvis_Presley"
+      ],
+      "relations": [
+         "child"
+      ],
+      "fil_sparql": "ASK WHERE { res:Elvis_Presley dbo:child ?uri }",
+      "question": "did elvis presley have children",
+      "question_pos_tokens": [
+         "VERB",
+         "PROPN",
+         "X",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         7,
+         2,
+         5,
+         1,
+         2,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "aux",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "ROOT",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         2,
+         3,
+         3,
+         1,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "el",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "vis",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "pres",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "ley",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "have",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "6": {
+            "token": "children",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "376",
+      "en_ques": "is michelle obama the wife of barack obama?",
+      "en_key": "michelle obama, wife, barack obama",
+      "de_ques": "ist michelle obama die ehefrau von barack obama?",
+      "de_key": "michelle obama, ehefrau, barack obama",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Barack_Obama dbo:spouse res:Michelle_Obama }",
+      "entities": [
+         "Barack_Obama",
+         "Michelle_Obama"
+      ],
+      "relations": [
+         "spouse"
+      ],
+      "fil_sparql": "ASK WHERE { res:Barack_Obama dbo:spouse res:Michelle_Obama }",
+      "question": "is michelle obama the wife of barack obama",
+      "question_pos_tokens": [
+         "AUX",
+         "PROPN",
+         "PROPN",
+         "PROPN",
+         "X",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "ADJ",
+         "PROPN",
+         "PROPN",
+         "X"
+      ],
+      "question_pos_ids": [
+         13,
+         2,
+         2,
+         2,
+         5,
+         1,
+         1,
+         1,
+         11,
+         2,
+         2,
+         5
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "det",
+         "appos",
+         "prep",
+         "compound",
+         "compound",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         1,
+         3,
+         3,
+         2,
+         2,
+         4,
+         3,
+         4,
+         6,
+         6,
+         5,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "mic",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "helle",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "ob",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "ama",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "wife",
+            "pos": "NOUN",
+            "dep-tok": "appos",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "bar",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "9": {
+            "token": "ack",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "10": {
+            "token": "ob",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         },
+         "11": {
+            "token": "ama",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "377",
+      "en_ques": "in which city does sylvester stallone live?",
+      "en_key": "city, live, sylvester stallone",
+      "de_ques": "in welcher stadt wohnt sylvester stallone?",
+      "de_key": "sylvester stallone, wohnen, stadt",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:City . res:Sylvester_Stallone dbo:residence ?uri }",
+      "entities": [
+         "Sylvester_Stallone"
+      ],
+      "relations": [
+         "City",
+         "residence"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:City . res:Sylvester_Stallone dbo:residence ?uri }",
+      "question": "in which city does sylvester stallone live",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "VERB",
+         "VERB",
+         "NOUN",
+         "NUM",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         1,
+         7,
+         7,
+         1,
+         10,
+         2
+      ],
+      "question_dep_ids": [
+         "prep",
+         "pobj",
+         "nsubj",
+         "ROOT",
+         "compound",
+         "compound",
+         "compound",
+         "dobj",
+         "dobj",
+         "advmod"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         3,
+         1,
+         4,
+         4,
+         4,
+         3,
+         3,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "city",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "does",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "4": {
+            "token": "sy",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "lves",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "ter",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "stall",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         },
+         "8": {
+            "token": "one",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         },
+         "9": {
+            "token": "live",
+            "pos": "ADV",
+            "dep-tok": "advmod",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "378",
+      "en_ques": "which books by kerouac were published by viking press?",
+      "en_key": "book, kerouac, publish, viking press",
+      "de_ques": "welche b\u00fccher von kerouac wurden von viking press verlegt?",
+      "de_key": "buch, kerouac, verlegen, viking press",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:publisher res:Viking_Press ; dbo:author res:Jack_Kerouac }",
+      "entities": [
+         "Viking_Press",
+         "Jack_Kerouac"
+      ],
+      "relations": [
+         "Book",
+         "publisher",
+         "author"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:publisher res:Viking_Press ; dbo:author res:Jack_Kerouac }",
+      "question": "which books by kerouac were published by viking press",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "INTJ",
+         "X",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "ADV",
+         "VERB",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         9,
+         5,
+         1,
+         7,
+         1,
+         15,
+         7,
+         1
+      ],
+      "question_dep_ids": [
+         "det",
+         "nsubjpass",
+         "prep",
+         "pobj",
+         "pobj",
+         "pobj",
+         "auxpass",
+         "ROOT",
+         "agent",
+         "compound",
+         "compound",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         4,
+         2,
+         3,
+         3,
+         3,
+         4,
+         1,
+         4,
+         6,
+         6,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "books",
+            "pos": "NOUN",
+            "dep-tok": "nsubjpass",
+            "dep-lvl": 4
+         },
+         "2": {
+            "token": "by",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "ker",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "ou",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "ac",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "were",
+            "pos": "AUX",
+            "dep-tok": "auxpass",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "published",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "8": {
+            "token": "by",
+            "pos": "ADP",
+            "dep-tok": "agent",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": "v",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "10": {
+            "token": "iking",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "11": {
+            "token": "press",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "379",
+      "en_ques": "who wrote the song hotel california?",
+      "en_key": "write, song, hotel california",
+      "de_ques": "wer hat das lied hotel california geschrieben?",
+      "de_key": "lied, hotel california, geschrieben",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Hotel_California dbo:writer ?uri }",
+      "entities": [
+         "Hotel_California"
+      ],
+      "relations": [
+         "writer"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Hotel_California dbo:writer ?uri }",
+      "question": "who wrote the song hotel california",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "SCONJ",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         2,
+         1,
+         8,
+         1
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "compound",
+         "compound",
+         "dobj",
+         "dobj",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         4,
+         3,
+         4,
+         2,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "wrote",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "song",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "hotel",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "cal",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "6": {
+            "token": "if",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "7": {
+            "token": "ornia",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "380",
+      "en_ques": "what is the capital of canada?",
+      "en_key": "capital, canada",
+      "de_ques": "was ist die hauptstadt von kanada?",
+      "de_key": "hauptstadt, kanada",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Canada dbo:capital ?uri }",
+      "entities": [
+         "Canada"
+      ],
+      "relations": [
+         "capital"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Canada dbo:capital ?uri }",
+      "question": "what is the capital of canada",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         2,
+         2
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "nsubj",
+         "prep",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "capital",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "can",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "ada",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "381",
+      "en_ques": "who is the mayor of tel aviv?",
+      "en_key": "tel aviv, mayor",
+      "de_ques": "wer ist der b\u00fcrgermeister von tel aviv?",
+      "de_key": "tel aviv, b\u00fcrgermeister",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Tel_Aviv dbo:leaderName ?uri }",
+      "entities": [
+         "Tel_Aviv"
+      ],
+      "relations": [
+         "leaderName"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Tel_Aviv dbo:leaderName ?uri }",
+      "question": "who is the mayor of tel aviv",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "X"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         2,
+         1,
+         1,
+         1,
+         5
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "attr",
+         "prep",
+         "compound",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         5,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "mayor",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "tel",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "av",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "iv",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "382",
+      "en_ques": "what form of government does russia have?",
+      "en_key": "form of government, russia",
+      "de_ques": "welche regierungsform hat russland?",
+      "de_key": "russland, regierungsform",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Russia dbo:governmentType ?uri }",
+      "entities": [
+         "Russia"
+      ],
+      "relations": [
+         "governmentType"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Russia dbo:governmentType ?uri }",
+      "question": "what form of government does russia have",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "ADJ",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         1,
+         11,
+         1
+      ],
+      "question_dep_ids": [
+         "det",
+         "dobj",
+         "prep",
+         "pobj",
+         "aux",
+         "nsubj",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         2,
+         4,
+         2,
+         3,
+         4,
+         4,
+         4,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "form",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 4
+         },
+         "2": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "government",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "does",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "r",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "ussia",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "have",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "383",
+      "en_ques": "show me the book that muhammad ali wrote.",
+      "en_key": "book, wrote, muhammad ali",
+      "de_ques": "zeig mir das buch, das muhammad ali geschrieben hat.",
+      "de_key": "buch, geschrieben, muhammad ali",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:Muhammad_Ali }",
+      "entities": [
+         "Muhammad_Ali"
+      ],
+      "relations": [
+         "Book",
+         "author"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:Muhammad_Ali }",
+      "question": "show me the book that muhammad ali wrote.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         1,
+         2,
+         1,
+         2,
+         2,
+         1,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "dobj",
+         "dobj",
+         "compound",
+         "compound",
+         "nsubj",
+         "relcl",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         2,
+         5,
+         4,
+         4,
+         5,
+         3,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "show",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "book",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "that",
+            "pos": "PRON",
+            "dep-tok": "dobj",
+            "dep-lvl": 5
+         },
+         "5": {
+            "token": "mu",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "hammad",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "ali",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "wrote",
+            "pos": "VERB",
+            "dep-tok": "relcl",
+            "dep-lvl": 3
+         },
+         "9": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "384",
+      "en_ques": "who was the first to climb mount everest?",
+      "en_key": "first, climb, mount everest",
+      "de_ques": "wer hat als erstes den mount everest bestiegen?",
+      "de_key": "mount everest, besteigen, erster",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Mount_Everest dbo:firstAscentPerson ?uri }",
+      "entities": [
+         "Mount_Everest"
+      ],
+      "relations": [
+         "firstAscentPerson"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Mount_Everest dbo:firstAscentPerson ?uri }",
+      "question": "who was the first to climb mount everest",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "VERB"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         1,
+         1,
+         2,
+         1,
+         2,
+         1,
+         7
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "attr",
+         "aux",
+         "relcl",
+         "compound",
+         "attr",
+         "attr"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         4,
+         3,
+         5,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "was",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "first",
+            "pos": "ADJ",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "to",
+            "pos": "PART",
+            "dep-tok": "aux",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "climb",
+            "pos": "VERB",
+            "dep-tok": "relcl",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "mount",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "eve",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "8": {
+            "token": "rest",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "385",
+      "en_ques": "how many languages are spoken in colombia?",
+      "en_key": "languages, colombia",
+      "de_ques": "wieviele sprachen werden in kolumbien gesprochen?",
+      "de_key": "sprachen, kolumbien",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri rdf:type dbo:Language . res:Colombia dbo:language ?uri }",
+      "entities": [
+         "Colombia"
+      ],
+      "relations": [
+         "Language",
+         "language"
+      ],
+      "fil_sparql": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri rdf:type dbo:Language . res:Colombia dbo:language ?uri }",
+      "question": "how many languages are spoken in colombia",
+      "question_pos_tokens": [
+         "SCONJ",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         8,
+         1,
+         1,
+         1,
+         2,
+         1,
+         1,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "amod",
+         "nsubjpass",
+         "auxpass",
+         "ROOT",
+         "prep",
+         "pobj",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         3,
+         4,
+         4,
+         1,
+         4,
+         5,
+         5,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "how",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "many",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "languages",
+            "pos": "NOUN",
+            "dep-tok": "nsubjpass",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "are",
+            "pos": "AUX",
+            "dep-tok": "auxpass",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "spoken",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "5": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "col",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "omb",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "ia",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "386",
+      "en_ques": "what is the currency of the czech republic?",
+      "en_key": "czech republic, currency",
+      "de_ques": "was ist die w\u00e4hrung der tschechischen republik?",
+      "de_key": "tschechischen republik, w\u00e4hrung",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Czech_Republic dbo:currency ?uri }",
+      "entities": [
+         "Czech_Republic"
+      ],
+      "relations": [
+         "currency"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Czech_Republic dbo:currency ?uri }",
+      "question": "what is the currency of the czech republic",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "ADJ",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         11,
+         1,
+         1,
+         1,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "nsubj",
+         "prep",
+         "det",
+         "pobj",
+         "compound",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         5,
+         4,
+         5,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "currency",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "c",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "zech",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "republic",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "387",
+      "en_ques": "where in france is sparkling wine produced?",
+      "en_key": "produced, france, sparkling wine",
+      "de_ques": "wo in frankreich wird schaumwein hergestellt?",
+      "de_key": "frankreich, hergestellt, schaumwein",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:wineProduced res:Sparkling_wine ; dbo:location res:France }",
+      "entities": [
+         "Sparkling_wine",
+         "France"
+      ],
+      "relations": [
+         "wineProduced",
+         "location"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:wineProduced res:Sparkling_wine ; dbo:location res:France }",
+      "question": "where in france is sparkling wine produced",
+      "question_pos_tokens": [
+         "SCONJ",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         8,
+         1,
+         1,
+         2,
+         1,
+         7,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "prep",
+         "pobj",
+         "pobj",
+         "aux",
+         "amod",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         5,
+         3,
+         2,
+         2,
+         3,
+         4,
+         5,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "where",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 5
+         },
+         "1": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "fr",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "ance",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "sparkling",
+            "pos": "VERB",
+            "dep-tok": "amod",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "wine",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "produced",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "388",
+      "en_ques": "when did boris becker end his active career?",
+      "en_key": "boris becker, end career",
+      "de_ques": "wann hat boris becker seine aktive karriere beendet?",
+      "de_key": "boris becker, aktive karriere, beendet",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?d WHERE { res:Boris_Becker dbo:activeYearsEndDate ?d }",
+      "entities": [
+         "Boris_Becker"
+      ],
+      "relations": [
+         "activeYearsEndDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?d WHERE { res:Boris_Becker dbo:activeYearsEndDate ?d }",
+      "question": "when did boris becker end his active career",
+      "question_pos_tokens": [
+         "SCONJ",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         8,
+         1,
+         1,
+         2,
+         1,
+         2,
+         1,
+         1,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "aux",
+         "nsubj",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "ROOT",
+         "poss",
+         "amod",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         3,
+         3,
+         3,
+         2,
+         3,
+         3,
+         1,
+         4,
+         4,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "when",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "did",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "b",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "oris",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "bec",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "ker",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "end",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "7": {
+            "token": "his",
+            "pos": "PRON",
+            "dep-tok": "poss",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "active",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": "career",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "389",
+      "en_ques": "which movies starring mickey rourke were directed by guy ritchie?",
+      "en_key": "movies, starring, mickey rourke, directed, guy ritchie",
+      "de_ques": "bei welchen filmen, in denen mickey rourke mitspielt, hat guy ritchie regie gef\u00fchrt?",
+      "de_key": "filme, spielt mit, mickey rourke, regie f\u00fchren, guy ritchie",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Mickey_Rourke ; dbo:director res:Guy_Ritchie }",
+      "entities": [
+         "Mickey_Rourke",
+         "Guy_Ritchie"
+      ],
+      "relations": [
+         "Film",
+         "starring",
+         "director"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Mickey_Rourke ; dbo:director res:Guy_Ritchie }",
+      "question": "which movies starring mickey rourke were directed by guy ritchie",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "VERB",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         7,
+         2,
+         1,
+         1,
+         1,
+         1,
+         7,
+         1,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "det",
+         "nsubjpass",
+         "acl",
+         "compound",
+         "compound",
+         "pobj",
+         "dobj",
+         "auxpass",
+         "ROOT",
+         "agent",
+         "compound",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         5,
+         2,
+         4,
+         4,
+         6,
+         3,
+         5,
+         1,
+         5,
+         7,
+         6,
+         6
+      ],
+      "mapping": {
+         "0": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "movies",
+            "pos": "NOUN",
+            "dep-tok": "nsubjpass",
+            "dep-lvl": 5
+         },
+         "2": {
+            "token": "starring",
+            "pos": "VERB",
+            "dep-tok": "acl",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "mic",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "key",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "r",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "6": {
+            "token": "ourke",
+            "pos": "PROPN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "were",
+            "pos": "AUX",
+            "dep-tok": "auxpass",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "directed",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "9": {
+            "token": "by",
+            "pos": "ADP",
+            "dep-tok": "agent",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "guy",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 7
+         },
+         "11": {
+            "token": "r",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         },
+         "12": {
+            "token": "itchie",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         }
+      }
+   },
+   {
+      "id": "390",
+      "en_ques": "in which films did julia roberts as well as richard gere play?",
+      "en_key": "film, play, julia roberts, richard gere",
+      "de_ques": "in welchen filmen spielen sowohl julia roberts als auch richard gere mit?",
+      "de_key": "film, mitspielen, julia roberts, richard gere",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Julia_Roberts ; dbo:starring res:Richard_Gere }",
+      "entities": [
+         "Julia_Roberts",
+         "Richard_Gere"
+      ],
+      "relations": [
+         "Film",
+         "starring",
+         "starring"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Julia_Roberts ; dbo:starring res:Richard_Gere }",
+      "question": "in which films did julia roberts as well as richard gere play",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "ADP",
+         "VERB",
+         "NOUN",
+         "PROPN",
+         "VERB",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PRON",
+         "VERB",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         6,
+         7,
+         1,
+         2,
+         7,
+         1,
+         2,
+         1,
+         1,
+         2,
+         3,
+         7,
+         1
+      ],
+      "question_dep_ids": [
+         "prep",
+         "pobj",
+         "nsubj",
+         "advcl",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "nsubj",
+         "cc",
+         "advmod",
+         "cc",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         3,
+         7,
+         4,
+         4,
+         3,
+         3,
+         3,
+         5,
+         5,
+         5,
+         6,
+         6,
+         7,
+         7,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "films",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "did",
+            "pos": "VERB",
+            "dep-tok": "advcl",
+            "dep-lvl": 7
+         },
+         "4": {
+            "token": "j",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "ulia",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "ro",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "ber",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "8": {
+            "token": "ts",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "9": {
+            "token": "as",
+            "pos": "ADP",
+            "dep-tok": "cc",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "well",
+            "pos": "ADV",
+            "dep-tok": "advmod",
+            "dep-lvl": 5
+         },
+         "11": {
+            "token": "as",
+            "pos": "ADP",
+            "dep-tok": "cc",
+            "dep-lvl": 5
+         },
+         "12": {
+            "token": "rich",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "13": {
+            "token": "ard",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "14": {
+            "token": "g",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 7
+         },
+         "15": {
+            "token": "ere",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 7
+         },
+         "16": {
+            "token": "play",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "391",
+      "en_ques": "show me hemingway's autobiography.",
+      "en_key": "autobiography, hemingway",
+      "de_ques": "zeig mir hemmingways autobiographie.",
+      "de_key": "hemmingway, autobiographie",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:author res:Ernest_Hemingway ; dbo:literaryGenre res:Autobiography }",
+      "entities": [
+         "Ernest_Hemingway",
+         "Autobiography"
+      ],
+      "relations": [
+         "author",
+         "literaryGenre"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:author res:Ernest_Hemingway ; dbo:literaryGenre res:Autobiography }",
+      "question": "show me hemingway's autobiography.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "AUX",
+         "NOUN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         2,
+         1,
+         13,
+         1,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "poss",
+         "poss",
+         "poss",
+         "case",
+         "dobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         4,
+         4,
+         4,
+         3,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "show",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "he",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "ming",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "way",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "'s",
+            "pos": "PART",
+            "dep-tok": "case",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "autobiography",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "7": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "392",
+      "en_ques": "how tall is amazon eve?",
+      "en_key": "amazon eve, tall",
+      "de_ques": "wie gro\u00df ist amazon eve?",
+      "de_key": "amazon eve, gr\u00f6\u00dfe",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?height WHERE { res:Amazon_Eve dbo:height ?height }",
+      "entities": [
+         "Amazon_Eve"
+      ],
+      "relations": [
+         "height"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?height WHERE { res:Amazon_Eve dbo:height ?height }",
+      "question": "how tall is amazon eve",
+      "question_pos_tokens": [
+         "SCONJ",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         8,
+         2,
+         1,
+         2,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "advmod",
+         "acomp",
+         "ROOT",
+         "compound",
+         "compound",
+         "nsubj"
+      ],
+      "question_dep_lvl": [
+         2,
+         3,
+         1,
+         4,
+         4,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "how",
+            "pos": "SCONJ",
+            "dep-tok": "advmod",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "tall",
+            "pos": "ADJ",
+            "dep-tok": "acomp",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "3": {
+            "token": "am",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "azon",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "eve",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "393",
+      "en_ques": "what are the five boroughs of new york?",
+      "en_key": "five boroughs, new york",
+      "de_ques": "was sind die f\u00fcnf stadtteile von new york?",
+      "de_key": "new york, f\u00fcnf stadtteile",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri dbo:governmentType <http://dbpedia.org/resource/Borough_(New_York_City)> }",
+      "entities": [
+         "Borough_(New_York_City)"
+      ],
+      "relations": [
+         "governmentType"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:governmentType dbr:Borough_(New_York_City) }",
+      "question": "what are the five boroughs of new york",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "X",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         5,
+         1,
+         1,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "nummod",
+         "nsubj",
+         "nsubj",
+         "prep",
+         "compound",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         3,
+         2,
+         2,
+         3,
+         5,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "are",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "five",
+            "pos": "NUM",
+            "dep-tok": "nummod",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "borough",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "s",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "6": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "new",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "y",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": "ork",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "394",
+      "en_ques": "give me all canadian grunge record labels.",
+      "en_key": "record label, canadian, grunge",
+      "de_ques": "gib mir alle kanadischen grunge-plattenfirmen.",
+      "de_key": "kanadisch, plattenfirma, grunge",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:RecordLabel ; dbo:genre res:Grunge ; dbo:country res:Canada }",
+      "entities": [
+         "Grunge",
+         "Canada"
+      ],
+      "relations": [
+         "RecordLabel",
+         "genre",
+         "country"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:RecordLabel ; dbo:genre res:Grunge ; dbo:country res:Canada }",
+      "question": "give me all canadian grunge record labels.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "ADJ",
+         "PROPN",
+         "PROPN",
+         "PROPN",
+         "PROPN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         2,
+         11,
+         2,
+         2,
+         2,
+         2,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "amod",
+         "amod",
+         "compound",
+         "compound",
+         "compound",
+         "dobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         4,
+         4,
+         4,
+         3,
+         3,
+         4,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "give",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "all",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "can",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "adian",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "grun",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "ge",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "record",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "labels",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "9": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "395",
+      "en_ques": "in which country does the ganges start?",
+      "en_key": "ganges, start, country",
+      "de_ques": "in welchem land entspringt der ganges?",
+      "de_key": "ganges, entspringen, land",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Ganges dbo:sourceCountry ?uri }",
+      "entities": [
+         "Ganges"
+      ],
+      "relations": [
+         "sourceCountry"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Ganges dbo:sourceCountry ?uri }",
+      "question": "in which country does the ganges start",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PRON",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         1,
+         3,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "prep",
+         "det",
+         "pcomp",
+         "aux",
+         "det",
+         "nsubj",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         5,
+         3,
+         2,
+         5,
+         4,
+         5,
+         5,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 5
+         },
+         "1": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "country",
+            "pos": "NOUN",
+            "dep-tok": "pcomp",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "does",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 5
+         },
+         "4": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "g",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "anges",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "start",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "396",
+      "en_ques": "who is the founder of penguin books?",
+      "en_key": "founder, penguin books",
+      "de_ques": "wer hat penguin books gegr\u00fcndet?",
+      "de_key": "gegr\u00fcndet, penguin books",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Penguin_Books dbo:founder ?uri }",
+      "entities": [
+         "Penguin_Books"
+      ],
+      "relations": [
+         "founder"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Penguin_Books dbo:founder ?uri }",
+      "question": "who is the founder of penguin books",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "ADP",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         2,
+         6,
+         1
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "attr",
+         "prep",
+         "compound",
+         "compound",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         5,
+         5,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "founder",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "pengu",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "6": {
+            "token": "in",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "books",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "397",
+      "en_ques": "who wrote the game of thrones theme?",
+      "en_key": "writer, game of thrones",
+      "de_ques": "wer hat das titellied f\u00fcr games of thrones geschrieben?",
+      "de_key": "game of thrones, komponist",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Game_of_Thrones dbo:composer ?uri }",
+      "entities": [
+         "Game_of_Thrones"
+      ],
+      "relations": [
+         "composer"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Game_of_Thrones dbo:composer ?uri }",
+      "question": "who wrote the game of thrones theme",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         2,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "dobj",
+         "prep",
+         "pobj",
+         "compound",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         4,
+         5,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "wrote",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "game",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "th",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "rones",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "theme",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "398",
+      "en_ques": "who is the president of eritrea?",
+      "en_key": "president, eritrea",
+      "de_ques": "wer ist der pr\u00e4sident von eritrea?",
+      "de_key": "pr\u00e4sident, eritrea",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Eritrea dbo:leader ?uri ; dbo:leaderTitle 'President'@en }",
+      "entities": [
+         "Eritrea"
+      ],
+      "relations": [
+         "leader",
+         "leaderTitle"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Eritrea dbo:leader ?uri ; dbo:leaderTitle 'President'@en }",
+      "question": "who is the president of eritrea",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PRON",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         1,
+         3,
+         2
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "attr",
+         "prep",
+         "pobj",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         2,
+         3,
+         4,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "president",
+            "pos": "NOUN",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "er",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "it",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "rea",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "399",
+      "en_ques": "in which city did john f. kennedy die?",
+      "en_key": "city, john f. kennedy, die",
+      "de_ques": "in welcher stadt ist john f. kennedy gestorben?",
+      "de_key": "stadt, john f. kennedy, gestorben",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:John_F._Kennedy dbo:deathPlace ?uri . ?uri rdf:type dbo:City }",
+      "entities": [
+         "John_F._Kennedy"
+      ],
+      "relations": [
+         "deathPlace",
+         "City"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:John_F._Kennedy dbo:deathPlace ?uri . ?uri rdf:type dbo:City }",
+      "question": "in which city did john f. kennedy die",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PUNCT",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         1,
+         1,
+         4,
+         1,
+         2,
+         2,
+         1
+      ],
+      "question_dep_ids": [
+         "prep",
+         "det",
+         "nsubj",
+         "advcl",
+         "compound",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "nsubj",
+         "ROOT"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         3,
+         5,
+         4,
+         4,
+         4,
+         5,
+         5,
+         5,
+         1
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "city",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "did",
+            "pos": "VERB",
+            "dep-tok": "advcl",
+            "dep-lvl": 5
+         },
+         "4": {
+            "token": "john",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "f",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": ".",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "k",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "enn",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": "edy",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "die",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         }
+      }
+   },
+   {
+      "id": "400",
+      "en_ques": "what is the highest mountain in australia?",
+      "en_key": "australia, highest mountain",
+      "de_ques": "was ist der h\u00f6chste berg in australien?",
+      "de_key": "australien, h\u00f6chster berg",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain ; dbo:locatedInArea res:Australia ; dbo:elevation ?elevation } ORDER BY DESC(?elevation) LIMIT 1",
+      "entities": [
+         "Australia"
+      ],
+      "relations": [
+         "Mountain",
+         "locatedInArea",
+         "elevation"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain ; dbo:locatedInArea res:Australia ; dbo:elevation ?elevation } ORDER BY DESC(?elevation) LIMIT 1",
+      "question": "what is the highest mountain in australia",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         2,
+         1,
+         2,
+         2,
+         2
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "amod",
+         "nsubj",
+         "prep",
+         "pobj",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         3,
+         2,
+         3,
+         4,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "highest",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "mountain",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "aust",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "ral",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "ia",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "401",
+      "en_ques": "who writes the farmers' almanac?",
+      "en_key": "writes, farmers' almanac",
+      "de_ques": "wer schreibt das farmes' almanac?",
+      "de_key": "autor, farmers' almanac",
+      "sparql": "PREFIX dbp: <http://dbpedia.org/property/> SELECT ?uri WHERE { <http://dbpedia.org/resource/Farmers'_Almanac> dbp:editor ?uri }",
+      "entities": [
+         "Farmers'_Almanac"
+      ],
+      "relations": [
+         "editor"
+      ],
+      "fil_sparql": "SELECT ?uri WHERE { dbr:Farmers'_Almanac dbp:editor ?uri }",
+      "question": "who writes the farmers' almanac",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PUNCT",
+         "NOUN",
+         "ADP"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         4,
+         1,
+         6
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "det",
+         "poss",
+         "case",
+         "dobj",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         4,
+         3,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "writes",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "farmers",
+            "pos": "NOUN",
+            "dep-tok": "poss",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "'",
+            "pos": "PART",
+            "dep-tok": "case",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "al",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "6": {
+            "token": "manac",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "402",
+      "en_ques": "give me the currency of china.",
+      "en_key": "currency, china",
+      "de_ques": "zeig mir die w\u00e4hrung in china an.",
+      "de_key": "w\u00e4hrung, china",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:China dbo:currency ?uri }",
+      "entities": [
+         "China"
+      ],
+      "relations": [
+         "currency"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:China dbo:currency ?uri }",
+      "question": "give me the currency of china.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "ADJ",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         11,
+         1,
+         1,
+         2,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "dobj",
+         "prep",
+         "pobj",
+         "pobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         2,
+         3,
+         4,
+         4,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "give",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "currency",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "ch",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "ina",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "403",
+      "en_ques": "give me all swedish oceanographers.",
+      "en_key": "swedish, oceanographer",
+      "de_ques": "gib mir alle in schweden geborenen ozeanographen.",
+      "de_key": "schweden, geborene, ozeanographen",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:field res:Oceanography ; dbo:birthPlace res:Sweden }",
+      "entities": [
+         "Oceanography",
+         "Sweden"
+      ],
+      "relations": [
+         "field",
+         "birthPlace"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:field res:Oceanography ; dbo:birthPlace res:Sweden }",
+      "question": "give me all swedish oceanographers.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "ADJ",
+         "NOUN",
+         "NOUN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         2,
+         2,
+         11,
+         1,
+         1,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "amod",
+         "amod",
+         "amod",
+         "dobj",
+         "dobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         3,
+         3,
+         3,
+         2,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "give",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "all",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "sw",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "ed",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "ish",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "ocean",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "7": {
+            "token": "ographers",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "8": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "404",
+      "en_ques": "in which city are the headquarters of the united nations?",
+      "en_key": "city, headquarters of the united nations",
+      "de_ques": "in welcher stadt ist das hauptquartier der vereinten nationen?",
+      "de_key": "vereinte nationen, hauptquartier, stadt",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Headquarters_of_the_United_Nations dbo:location ?uri . ?uri rdf:type dbo:City }",
+      "entities": [
+         "Headquarters_of_the_United_Nations"
+      ],
+      "relations": [
+         "location",
+         "City"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Headquarters_of_the_United_Nations dbo:location ?uri . ?uri rdf:type dbo:City }",
+      "question": "in which city are the headquarters of the united nations",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "VERB",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         7,
+         1
+      ],
+      "question_dep_ids": [
+         "prep",
+         "det",
+         "nsubj",
+         "ROOT",
+         "det",
+         "nsubj",
+         "prep",
+         "det",
+         "compound",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         3,
+         1,
+         4,
+         3,
+         4,
+         6,
+         6,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "city",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "are",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "4": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "headquarters",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "7": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 6
+         },
+         "8": {
+            "token": "united",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "9": {
+            "token": "nations",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "405",
+      "en_ques": "is rita wilson the wife of tom hanks?",
+      "en_key": "rita wilson, wife, tom hanks",
+      "de_ques": "ist rita wilson die ehefrau von tom hanks?",
+      "de_key": "rita wilson, ehefrau, tom hanks",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Tom_Hanks dbo:spouse res:Rita_Wilson }",
+      "entities": [
+         "Tom_Hanks",
+         "Rita_Wilson"
+      ],
+      "relations": [
+         "spouse"
+      ],
+      "fil_sparql": "ASK WHERE { res:Tom_Hanks dbo:spouse res:Rita_Wilson }",
+      "question": "is rita wilson the wife of tom hanks",
+      "question_pos_tokens": [
+         "AUX",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         13,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "compound",
+         "compound",
+         "nsubj",
+         "nsubj",
+         "det",
+         "appos",
+         "prep",
+         "compound",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         1,
+         3,
+         3,
+         2,
+         2,
+         4,
+         3,
+         4,
+         6,
+         5,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "is",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "r",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "2": {
+            "token": "ita",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "wil",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "son",
+            "pos": "PROPN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "wife",
+            "pos": "NOUN",
+            "dep-tok": "appos",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "8": {
+            "token": "tom",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "9": {
+            "token": "h",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "anks",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "406",
+      "en_ques": "in which countries do people speak japanese?",
+      "en_key": "which countries, speak, japanese",
+      "de_ques": "in welchen l\u00e4ndern wird japanisch gesprochen?",
+      "de_key": "l\u00e4nder, sprache, japanisch",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country ; dbo:language res:Japanese_language }",
+      "entities": [
+         "Japanese_language"
+      ],
+      "relations": [
+         "Country",
+         "language"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country ; dbo:language res:Japanese_language }",
+      "question": "in which countries do people speak japanese",
+      "question_pos_tokens": [
+         "ADP",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "ADP",
+         "PROPN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         6,
+         1,
+         1,
+         1,
+         1,
+         1,
+         6,
+         2,
+         2
+      ],
+      "question_dep_ids": [
+         "prep",
+         "pobj",
+         "nsubj",
+         "aux",
+         "nsubj",
+         "ROOT",
+         "dobj",
+         "dobj",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         3,
+         2,
+         3,
+         3,
+         3,
+         1,
+         3,
+         3,
+         3
+      ],
+      "mapping": {
+         "0": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "1": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "pobj",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "countries",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "do",
+            "pos": "AUX",
+            "dep-tok": "aux",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "people",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "speak",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "6": {
+            "token": "j",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "apan",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         },
+         "8": {
+            "token": "ese",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 3
+         }
+      }
+   },
+   {
+      "id": "407",
+      "en_ques": "which of tim burton's films had the highest budget?",
+      "en_key": "highest budget, film, tim burton",
+      "de_ques": "welcher von tim burtons filmen hatte das h\u00f6chste budget?",
+      "de_key": "h\u00f6chstes budget, film, tim burton",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Tim_Burton ; dbo:budget ?b } ORDER BY ?b OFFSET 0 LIMIT 1",
+      "entities": [
+         "Tim_Burton"
+      ],
+      "relations": [
+         "director",
+         "budget"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Tim_Burton ; dbo:budget ?b } ORDER BY ?b OFFSET 0 LIMIT 1",
+      "question": "which of tim burton's films had the highest budget",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "AUX",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         13,
+         1,
+         1,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "prep",
+         "compound",
+         "poss",
+         "poss",
+         "case",
+         "pobj",
+         "ROOT",
+         "det",
+         "amod",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         6,
+         2,
+         4,
+         5,
+         5,
+         4,
+         3,
+         1,
+         7,
+         7,
+         6
+      ],
+      "mapping": {
+         "0": {
+            "token": "which",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 6
+         },
+         "1": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "tim",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "bur",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 5
+         },
+         "4": {
+            "token": "ton",
+            "pos": "PROPN",
+            "dep-tok": "poss",
+            "dep-lvl": 5
+         },
+         "5": {
+            "token": "'s",
+            "pos": "PART",
+            "dep-tok": "case",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "films",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "7": {
+            "token": "had",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "8": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 7
+         },
+         "9": {
+            "token": "highest",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 7
+         },
+         "10": {
+            "token": "budget",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 6
+         }
+      }
+   },
+   {
+      "id": "408",
+      "en_ques": "which museum in new york has the most visitors?",
+      "en_key": "museum, new york, the most visitors",
+      "de_ques": "welches museum in new york hat die meisten besucher?",
+      "de_key": "museum, new york, die meisten besucher",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Museum ; dbo:location res:New_York_City ; dbo:numberOfVisitors ?num } ORDER BY DESC(?num) OFFSET 0 LIMIT 1",
+      "entities": [
+         "New_York_City"
+      ],
+      "relations": [
+         "Museum",
+         "location",
+         "numberOfVisitors"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Museum ; dbo:location res:New_York_City ; dbo:numberOfVisitors ?num } ORDER BY DESC(?num) OFFSET 0 LIMIT 1",
+      "question": "which museum in new york has the most visitors",
+      "question_pos_tokens": [
+         "PRON",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         1,
+         1,
+         1,
+         1,
+         2,
+         2,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "det",
+         "nsubj",
+         "prep",
+         "compound",
+         "pobj",
+         "pobj",
+         "ROOT",
+         "det",
+         "amod",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         5,
+         2,
+         4,
+         3,
+         3,
+         1,
+         6,
+         6,
+         5
+      ],
+      "mapping": {
+         "0": {
+            "token": "which",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "museum",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 5
+         },
+         "2": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "new",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "4": {
+            "token": "y",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "ork",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "has",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "7": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 6
+         },
+         "8": {
+            "token": "most",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 6
+         },
+         "9": {
+            "token": "visitors",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 5
+         }
+      }
+   },
+   {
+      "id": "409",
+      "en_ques": "what was the first queen album?",
+      "en_key": "first album, queen",
+      "de_ques": "was war das erste queen-album?",
+      "de_key": "erstes queen-album",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Album ; dbo:artist <http://dbpedia.org/resource/Queen_(band)> ; dbo:releaseDate ?d } ORDER BY ASC(?d) OFFSET 0 LIMIT 1",
+      "entities": [
+         "Queen_(band)"
+      ],
+      "relations": [
+         "Album",
+         "artist",
+         "releaseDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Album ; dbo:artist dbr:Queen_(band) ; dbo:releaseDate ?d } ORDER BY ASC(?d) OFFSET 0 LIMIT 1",
+      "question": "what was the first queen album",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         1,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "amod",
+         "compound",
+         "nsubj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         4,
+         3,
+         4,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "was",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 4
+         },
+         "3": {
+            "token": "first",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "queen",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 4
+         },
+         "5": {
+            "token": "album",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "410",
+      "en_ques": "what was the first name of the band queens of the stone age?",
+      "en_key": "first name, queens of the stone age",
+      "de_ques": "was war der erste name der band queens of the stone age?",
+      "de_key": "erste name, queens of the stone age",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?name WHERE { res:Queens_of_the_Stone_Age dbo:alias ?name }",
+      "entities": [
+         "Queens_of_the_Stone_Age"
+      ],
+      "relations": [
+         "alias"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?name WHERE { res:Queens_of_the_Stone_Age dbo:alias ?name }",
+      "question": "what was the first name of the band queens of the stone age",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "amod",
+         "nsubj",
+         "prep",
+         "det",
+         "compound",
+         "pobj",
+         "prep",
+         "det",
+         "compound",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         3,
+         2,
+         3,
+         5,
+         5,
+         4,
+         5,
+         7,
+         7,
+         6
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "was",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "first",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "name",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "band",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "queens",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": "of",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 5
+         },
+         "10": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 7
+         },
+         "11": {
+            "token": "stone",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 7
+         },
+         "12": {
+            "token": "age",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 6
+         }
+      }
+   },
+   {
+      "id": "411",
+      "en_ques": "what was the last movie with alec guinness?",
+      "en_key": "alec guinness, last, movie",
+      "de_ques": "was war der letzte film mit alec guinness?",
+      "de_key": "alec guinness, letzter, film",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Alec_Guinness ; dbo:releaseDate ?date } ORDER BY DESC(?date) LIMIT 1",
+      "entities": [
+         "Alec_Guinness"
+      ],
+      "relations": [
+         "Film",
+         "starring",
+         "releaseDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Alec_Guinness ; dbo:releaseDate ?date } ORDER BY DESC(?date) LIMIT 1",
+      "question": "what was the last movie with alec guinness",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "NOUN",
+         "NOUN",
+         "PROPN",
+         "PROPN",
+         "NOUN",
+         "X",
+         "NOUN",
+         "NOUN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         1,
+         1,
+         2,
+         2,
+         1,
+         5,
+         1,
+         1
+      ],
+      "question_dep_ids": [
+         "attr",
+         "ROOT",
+         "det",
+         "amod",
+         "nsubj",
+         "prep",
+         "compound",
+         "compound",
+         "pobj",
+         "pobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         3,
+         3,
+         2,
+         3,
+         5,
+         5,
+         4,
+         4
+      ],
+      "mapping": {
+         "0": {
+            "token": "what",
+            "pos": "PRON",
+            "dep-tok": "attr",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "was",
+            "pos": "AUX",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "the",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "last",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 3
+         },
+         "4": {
+            "token": "movie",
+            "pos": "NOUN",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "5": {
+            "token": "with",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 3
+         },
+         "6": {
+            "token": "ale",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "7": {
+            "token": "c",
+            "pos": "PROPN",
+            "dep-tok": "compound",
+            "dep-lvl": 5
+         },
+         "8": {
+            "token": "gu",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         },
+         "9": {
+            "token": "inness",
+            "pos": "PROPN",
+            "dep-tok": "pobj",
+            "dep-lvl": 4
+         }
+      }
+   },
+   {
+      "id": "412",
+      "en_ques": "give me all actors starring in last action hero.",
+      "en_key": "actor, starring, last action hero",
+      "de_ques": "gib mir alle schauspieler, die in last action hero mitgespielt haben.",
+      "de_key": "schauspieler, mitspielen, last action hero",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Last_Action_Hero dbo:starring ?uri }",
+      "entities": [
+         "Last_Action_Hero"
+      ],
+      "relations": [
+         "starring"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Last_Action_Hero dbo:starring ?uri }",
+      "question": "give me all actors starring in last action hero.",
+      "question_pos_tokens": [
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "VERB",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "NOUN",
+         "PUNCT"
+      ],
+      "question_pos_ids": [
+         7,
+         1,
+         1,
+         1,
+         7,
+         1,
+         1,
+         1,
+         1,
+         4
+      ],
+      "question_dep_ids": [
+         "ROOT",
+         "dative",
+         "det",
+         "dobj",
+         "acl",
+         "prep",
+         "amod",
+         "compound",
+         "pobj",
+         "punct"
+      ],
+      "question_dep_lvl": [
+         1,
+         2,
+         3,
+         2,
+         3,
+         4,
+         6,
+         6,
+         5,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "give",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "1": {
+            "token": "me",
+            "pos": "PRON",
+            "dep-tok": "dative",
+            "dep-lvl": 2
+         },
+         "2": {
+            "token": "all",
+            "pos": "DET",
+            "dep-tok": "det",
+            "dep-lvl": 3
+         },
+         "3": {
+            "token": "actors",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "4": {
+            "token": "starring",
+            "pos": "VERB",
+            "dep-tok": "acl",
+            "dep-lvl": 3
+         },
+         "5": {
+            "token": "in",
+            "pos": "ADP",
+            "dep-tok": "prep",
+            "dep-lvl": 4
+         },
+         "6": {
+            "token": "last",
+            "pos": "ADJ",
+            "dep-tok": "amod",
+            "dep-lvl": 6
+         },
+         "7": {
+            "token": "action",
+            "pos": "NOUN",
+            "dep-tok": "compound",
+            "dep-lvl": 6
+         },
+         "8": {
+            "token": "hero",
+            "pos": "NOUN",
+            "dep-tok": "pobj",
+            "dep-lvl": 5
+         },
+         "9": {
+            "token": ".",
+            "pos": "PUNCT",
+            "dep-tok": "punct",
+            "dep-lvl": 2
+         }
+      }
+   },
+   {
+      "id": "413",
+      "en_ques": "who discovered pluto?",
+      "en_key": "discovered, pluto",
+      "de_ques": "wer hat pluto entdeckt?",
+      "de_key": "pluto, entdeckt",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { dbr:Pluto dbo:discoverer ?uri }",
+      "entities": [
+         "Pluto"
+      ],
+      "relations": [
+         "discoverer"
+      ],
+      "fil_sparql": "SELECT ?uri WHERE { dbr:Pluto dbo:discoverer ?uri }",
+      "question": "who discovered pluto",
+      "question_pos_tokens": [
+         "PRON",
+         "PROPN",
+         "NOUN",
+         "PROPN"
+      ],
+      "question_pos_ids": [
+         3,
+         2,
+         1,
+         2
+      ],
+      "question_dep_ids": [
+         "nsubj",
+         "ROOT",
+         "dobj",
+         "dobj"
+      ],
+      "question_dep_lvl": [
+         2,
+         1,
+         2,
+         2
+      ],
+      "mapping": {
+         "0": {
+            "token": "who",
+            "pos": "PRON",
+            "dep-tok": "nsubj",
+            "dep-lvl": 2
+         },
+         "1": {
+            "token": "discovered",
+            "pos": "VERB",
+            "dep-tok": "ROOT",
+            "dep-lvl": 1
+         },
+         "2": {
+            "token": "pl",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         },
+         "3": {
+            "token": "uto",
+            "pos": "NOUN",
+            "dep-tok": "dobj",
+            "dep-lvl": 2
+         }
+      }
+   }
+]

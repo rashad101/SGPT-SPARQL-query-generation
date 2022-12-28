@@ -1,0 +1,918 @@
+[
+   {
+      "id": "356",
+      "en_ques": "when did operation overlord commence?",
+      "en_key": "when, operation overlord, commence",
+      "de_ques": "wann wurde die operation overlord durchgef\u00fchrt?",
+      "de_key": "operation overlord, datum",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?d WHERE { res:Operation_Overlord dbo:date ?d }",
+      "entities": [
+         "Operation_Overlord"
+      ],
+      "relations": [
+         "date"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?d WHERE { res:Operation_Overlord dbo:date ?d }"
+   },
+   {
+      "id": "357",
+      "en_ques": "what is the bridge with the longest span?",
+      "en_key": "bridge, longest span",
+      "de_ques": "welche br\u00fccke hat die l\u00e4ngste spannweite?",
+      "de_key": "br\u00fccke, l\u00e4ngste spannweite",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge ; dbo:mainspan ?s } ORDER BY DESC(?s) OFFSET 0 LIMIT 1",
+      "entities": [],
+      "relations": [
+         "Bridge",
+         "mainspan"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Bridge ; dbo:mainspan ?s } ORDER BY DESC(?s) OFFSET 0 LIMIT 1"
+   },
+   {
+      "id": "358",
+      "en_ques": "is there a video game called battle chess?",
+      "en_key": "video game, battle chess",
+      "de_ques": "gibt es ein videospiel, das battle chess hei\u00dft?",
+      "de_key": "videospiel, battle chess",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> ASK WHERE { ?uri rdf:type dbo:VideoGame ; rdfs:label 'Battle Chess'@en }",
+      "entities": [],
+      "relations": [
+         "VideoGame"
+      ],
+      "fil_sparql": "ASK WHERE { ?uri rdf:type dbo:VideoGame ; rdfs:label 'Battle Chess'@en }"
+   },
+   {
+      "id": "359",
+      "en_ques": "who was buried in the great pyramid of giza?",
+      "en_key": "buried, great pyramid of giza",
+      "de_ques": "wer wurde in der cheops-pyramide begraben?",
+      "de_key": "cheops-pyramide, begraben",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { ?uri dbo:restingPlace dbr:Great_Pyramid_of_Giza }",
+      "entities": [
+         "Great_Pyramid_of_Giza"
+      ],
+      "relations": [
+         "restingPlace"
+      ],
+      "fil_sparql": "SELECT ?uri WHERE { ?uri dbo:restingPlace dbr:Great_Pyramid_of_Giza }"
+   },
+   {
+      "id": "360",
+      "en_ques": "does the ford motor company have a manufacturing plant in malaysia?",
+      "en_key": "ford motor company, manufacturing plant, malaysia",
+      "de_ques": "hat ford eine frabik in malaysia?",
+      "de_key": "ford, fabrik, malaysia",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> ASK WHERE { ?uri dbo:assembly dbr:Malaysia ; dbo:manufacturer dbr:Ford_Motor_Company }",
+      "entities": [
+         "Malaysia",
+         "Ford_Motor_Company"
+      ],
+      "relations": [
+         "assembly",
+         "manufacturer"
+      ],
+      "fil_sparql": "ASK WHERE { ?uri dbo:assembly dbr:Malaysia ; dbo:manufacturer dbr:Ford_Motor_Company }"
+   },
+   {
+      "id": "361",
+      "en_ques": "did socrates influence aristotle?",
+      "en_key": "socrates, influence, aristotle",
+      "de_ques": "hat sokrates aristoteles beeinflusst?",
+      "de_key": "sokrates, beeinflusste, aristoteles",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Aristotle dbo:influencedBy res:Socrates }",
+      "entities": [
+         "Aristotle",
+         "Socrates"
+      ],
+      "relations": [
+         "influencedBy"
+      ],
+      "fil_sparql": "ASK WHERE { res:Aristotle dbo:influencedBy res:Socrates }"
+   },
+   {
+      "id": "362",
+      "en_ques": "how many children did benjamin franklin have?",
+      "en_key": "benjamin franklin, child",
+      "de_ques": "wieviele kinder hatte benjamin franklin?",
+      "de_key": "benjamin franklin, kinder",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { res:Benjamin_Franklin dbo:child ?uri }",
+      "entities": [
+         "Benjamin_Franklin"
+      ],
+      "relations": [
+         "child"
+      ],
+      "fil_sparql": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { res:Benjamin_Franklin dbo:child ?uri }"
+   },
+   {
+      "id": "363",
+      "en_ques": "how tall is michael jordan?",
+      "en_key": "tall, michael jordan",
+      "de_ques": "wie gro\u00df ist michael jordan?",
+      "de_key": "gr\u00f6\u00dfe, michael jordan",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?num WHERE { res:Michael_Jordan dbo:height ?num }",
+      "entities": [
+         "Michael_Jordan"
+      ],
+      "relations": [
+         "height"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?num WHERE { res:Michael_Jordan dbo:height ?num }"
+   },
+   {
+      "id": "364",
+      "en_ques": "in which uk city are the headquarters of the mi6?",
+      "en_key": "mi6, headquarters, city, uk",
+      "de_ques": "in welcher stadt im vereinigten k\u00f6nigreich ist das hauptquartier des mi6?",
+      "de_key": "mi6, hauptquartier, stadt, vereinigtes k\u00f6nigreich",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Secret_Intelligence_Service dbo:headquarter ?uri . ?uri dbo:country res:United_Kingdom }",
+      "entities": [
+         "Secret_Intelligence_Service",
+         "United_Kingdom"
+      ],
+      "relations": [
+         "headquarter",
+         "country"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Secret_Intelligence_Service dbo:headquarter ?uri . ?uri dbo:country res:United_Kingdom }"
+   },
+   {
+      "id": "365",
+      "en_ques": "who created family guy?",
+      "en_key": "create, family guy",
+      "de_ques": "wer hat sich family guy ausgedacht?",
+      "de_key": "family guy, erfinder",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Family_Guy dbo:creator ?uri }",
+      "entities": [
+         "Family_Guy"
+      ],
+      "relations": [
+         "creator"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Family_Guy dbo:creator ?uri }"
+   },
+   {
+      "id": "366",
+      "en_ques": "in which city does the chile route 68 end?",
+      "en_key": "city, chile route 68, ends",
+      "de_ques": "in welcher stadt h\u00f6rt die ruta 68 auf?",
+      "de_key": "stadt, aufh\u00f6ren, route 68",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Chile_Route_68 dbo:routeEnd ?uri }",
+      "entities": [
+         "Chile_Route_68"
+      ],
+      "relations": [
+         "routeEnd"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Chile_Route_68 dbo:routeEnd ?uri }"
+   },
+   {
+      "id": "367",
+      "en_ques": "give me the grandchildren of elvis presley.",
+      "en_key": "elvis presley, grandchildren",
+      "de_ques": "gib mir die enkel von elvis presley.",
+      "de_key": "elvis presley, enkel",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Elvis_Presley dbo:child ?child . ?child dbo:child ?uri }",
+      "entities": [
+         "Elvis_Presley"
+      ],
+      "relations": [
+         "child",
+         "child"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Elvis_Presley dbo:child ?child . ?child dbo:child ?uri }"
+   },
+   {
+      "id": "368",
+      "en_ques": "when did the ming dynasty dissolve?",
+      "en_key": "dissolve, ming dynasty",
+      "de_ques": "wann endete die ming-dynastie?",
+      "de_key": "ende, ming-dynastie",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?date WHERE { res:Ming_dynasty dbo:dissolutionDate ?date }",
+      "entities": [
+         "Ming_dynasty"
+      ],
+      "relations": [
+         "dissolutionDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?date WHERE { res:Ming_dynasty dbo:dissolutionDate ?date }"
+   },
+   {
+      "id": "369",
+      "en_ques": "in which military conflicts did lawrence of arabia participate?",
+      "en_key": "lawrence of arabia, military conflict",
+      "de_ques": "an welchen milit\u00e4rischen auseinandersetzungen war lawrence von arabien beteiligt?",
+      "de_key": "lawrence von arabien, milit\u00e4rische auseinandersetzung",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:T._E._Lawrence dbo:battle ?uri }",
+      "entities": [
+         "T._E._Lawrence"
+      ],
+      "relations": [
+         "battle"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:T._E._Lawrence dbo:battle ?uri }"
+   },
+   {
+      "id": "370",
+      "en_ques": "what is the timezone in san pedro de atacama?",
+      "en_key": "timezone, san pedro de atacama",
+      "de_ques": "in welcher zeitzone liegt san pedro de atacama?",
+      "de_key": "zeitzone, san pedro de atacama",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:San_Pedro_de_Atacama dbo:timeZone ?uri }",
+      "entities": [
+         "San_Pedro_de_Atacama"
+      ],
+      "relations": [
+         "timeZone"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:San_Pedro_de_Atacama dbo:timeZone ?uri }"
+   },
+   {
+      "id": "371",
+      "en_ques": "give me all books by william goldman with more than 300 pages.",
+      "en_key": "book, william goldman, pages, more than 300",
+      "de_ques": "gib mir alle b\u00fccher von william goldman mit mehr als 300 seiten.",
+      "de_key": "buch, william goldman, seiten, mehr als 300",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:William_Goldman ; dbo:numberOfPages ?x FILTER ( ?x > 300 ) }",
+      "entities": [
+         "William_Goldman"
+      ],
+      "relations": [
+         "Book",
+         "author",
+         "numberOfPages"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:William_Goldman ; dbo:numberOfPages ?x FILTER ( ?x > 300 ) }"
+   },
+   {
+      "id": "372",
+      "en_ques": "what did bruce carver die from?",
+      "en_key": "bruce carver, die",
+      "de_ques": "woran ist bruce carver gestorben?",
+      "de_key": "bruce carver, todesursache",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Bruce_Carver dbo:deathCause ?uri }",
+      "entities": [
+         "Bruce_Carver"
+      ],
+      "relations": [
+         "deathCause"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Bruce_Carver dbo:deathCause ?uri }"
+   },
+   {
+      "id": "373",
+      "en_ques": "which subsidiary of lufthansa serves both dortmund and berlin tegel?",
+      "en_key": "subsidiary, lufthansa, serve, dortmund, berlin tegel",
+      "de_ques": "welche tochtergesellschaft von lufthansa fliegt sowohl dortmund als auch berlin tegel an?",
+      "de_key": "tochtergesellschaft, lufthansa, anfliegen, dortmund, berlin tegel",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Lufthansa dbo:subsidiary ?uri . ?uri dbo:targetAirport res:Dortmund_Airport ; dbo:targetAirport res:Berlin_Tegel_Airport }",
+      "entities": [
+         "Lufthansa",
+         "Dortmund_Airport",
+         "Berlin_Tegel_Airport"
+      ],
+      "relations": [
+         "subsidiary",
+         "targetAirport",
+         "targetAirport"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Lufthansa dbo:subsidiary ?uri . ?uri dbo:targetAirport res:Dortmund_Airport ; dbo:targetAirport res:Berlin_Tegel_Airport }"
+   },
+   {
+      "id": "374",
+      "en_ques": "does abraham lincoln's death place have a website?",
+      "en_key": "abraham lincoln, death place, website",
+      "de_ques": "hat abraham lincolns sterbeort eine webseite?",
+      "de_key": "abraham lincoln, sterbeort, webseite",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Abraham_Lincoln dbo:deathPlace ?p . ?p dbo:website ?w }",
+      "entities": [
+         "Abraham_Lincoln"
+      ],
+      "relations": [
+         "deathPlace",
+         "website"
+      ],
+      "fil_sparql": "ASK WHERE { res:Abraham_Lincoln dbo:deathPlace ?p . ?p dbo:website ?w }"
+   },
+   {
+      "id": "375",
+      "en_ques": "did elvis presley have children?",
+      "en_key": "elvis presley, children",
+      "de_ques": "hatte elvis presley kinder?",
+      "de_key": "elvis presley, kinder",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Elvis_Presley dbo:child ?uri }",
+      "entities": [
+         "Elvis_Presley"
+      ],
+      "relations": [
+         "child"
+      ],
+      "fil_sparql": "ASK WHERE { res:Elvis_Presley dbo:child ?uri }"
+   },
+   {
+      "id": "376",
+      "en_ques": "is michelle obama the wife of barack obama?",
+      "en_key": "michelle obama, wife, barack obama",
+      "de_ques": "ist michelle obama die ehefrau von barack obama?",
+      "de_key": "michelle obama, ehefrau, barack obama",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Barack_Obama dbo:spouse res:Michelle_Obama }",
+      "entities": [
+         "Barack_Obama",
+         "Michelle_Obama"
+      ],
+      "relations": [
+         "spouse"
+      ],
+      "fil_sparql": "ASK WHERE { res:Barack_Obama dbo:spouse res:Michelle_Obama }"
+   },
+   {
+      "id": "377",
+      "en_ques": "in which city does sylvester stallone live?",
+      "en_key": "city, live, sylvester stallone",
+      "de_ques": "in welcher stadt wohnt sylvester stallone?",
+      "de_key": "sylvester stallone, wohnen, stadt",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:City . res:Sylvester_Stallone dbo:residence ?uri }",
+      "entities": [
+         "Sylvester_Stallone"
+      ],
+      "relations": [
+         "City",
+         "residence"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:City . res:Sylvester_Stallone dbo:residence ?uri }"
+   },
+   {
+      "id": "378",
+      "en_ques": "which books by kerouac were published by viking press?",
+      "en_key": "book, kerouac, publish, viking press",
+      "de_ques": "welche b\u00fccher von kerouac wurden von viking press verlegt?",
+      "de_key": "buch, kerouac, verlegen, viking press",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:publisher res:Viking_Press ; dbo:author res:Jack_Kerouac }",
+      "entities": [
+         "Viking_Press",
+         "Jack_Kerouac"
+      ],
+      "relations": [
+         "Book",
+         "publisher",
+         "author"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:publisher res:Viking_Press ; dbo:author res:Jack_Kerouac }"
+   },
+   {
+      "id": "379",
+      "en_ques": "who wrote the song hotel california?",
+      "en_key": "write, song, hotel california",
+      "de_ques": "wer hat das lied hotel california geschrieben?",
+      "de_key": "lied, hotel california, geschrieben",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Hotel_California dbo:writer ?uri }",
+      "entities": [
+         "Hotel_California"
+      ],
+      "relations": [
+         "writer"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Hotel_California dbo:writer ?uri }"
+   },
+   {
+      "id": "380",
+      "en_ques": "what is the capital of canada?",
+      "en_key": "capital, canada",
+      "de_ques": "was ist die hauptstadt von kanada?",
+      "de_key": "hauptstadt, kanada",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Canada dbo:capital ?uri }",
+      "entities": [
+         "Canada"
+      ],
+      "relations": [
+         "capital"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Canada dbo:capital ?uri }"
+   },
+   {
+      "id": "381",
+      "en_ques": "who is the mayor of tel aviv?",
+      "en_key": "tel aviv, mayor",
+      "de_ques": "wer ist der b\u00fcrgermeister von tel aviv?",
+      "de_key": "tel aviv, b\u00fcrgermeister",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Tel_Aviv dbo:leaderName ?uri }",
+      "entities": [
+         "Tel_Aviv"
+      ],
+      "relations": [
+         "leaderName"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Tel_Aviv dbo:leaderName ?uri }"
+   },
+   {
+      "id": "382",
+      "en_ques": "what form of government does russia have?",
+      "en_key": "form of government, russia",
+      "de_ques": "welche regierungsform hat russland?",
+      "de_key": "russland, regierungsform",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Russia dbo:governmentType ?uri }",
+      "entities": [
+         "Russia"
+      ],
+      "relations": [
+         "governmentType"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Russia dbo:governmentType ?uri }"
+   },
+   {
+      "id": "383",
+      "en_ques": "show me the book that muhammad ali wrote.",
+      "en_key": "book, wrote, muhammad ali",
+      "de_ques": "zeig mir das buch, das muhammad ali geschrieben hat.",
+      "de_key": "buch, geschrieben, muhammad ali",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:Muhammad_Ali }",
+      "entities": [
+         "Muhammad_Ali"
+      ],
+      "relations": [
+         "Book",
+         "author"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Book ; dbo:author res:Muhammad_Ali }"
+   },
+   {
+      "id": "384",
+      "en_ques": "who was the first to climb mount everest?",
+      "en_key": "first, climb, mount everest",
+      "de_ques": "wer hat als erstes den mount everest bestiegen?",
+      "de_key": "mount everest, besteigen, erster",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Mount_Everest dbo:firstAscentPerson ?uri }",
+      "entities": [
+         "Mount_Everest"
+      ],
+      "relations": [
+         "firstAscentPerson"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Mount_Everest dbo:firstAscentPerson ?uri }"
+   },
+   {
+      "id": "385",
+      "en_ques": "how many languages are spoken in colombia?",
+      "en_key": "languages, colombia",
+      "de_ques": "wieviele sprachen werden in kolumbien gesprochen?",
+      "de_key": "sprachen, kolumbien",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri rdf:type dbo:Language . res:Colombia dbo:language ?uri }",
+      "entities": [
+         "Colombia"
+      ],
+      "relations": [
+         "Language",
+         "language"
+      ],
+      "fil_sparql": "SELECT (COUNT(DISTINCT ?uri) AS ?c) WHERE { ?uri rdf:type dbo:Language . res:Colombia dbo:language ?uri }"
+   },
+   {
+      "id": "386",
+      "en_ques": "what is the currency of the czech republic?",
+      "en_key": "czech republic, currency",
+      "de_ques": "was ist die w\u00e4hrung der tschechischen republik?",
+      "de_key": "tschechischen republik, w\u00e4hrung",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Czech_Republic dbo:currency ?uri }",
+      "entities": [
+         "Czech_Republic"
+      ],
+      "relations": [
+         "currency"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Czech_Republic dbo:currency ?uri }"
+   },
+   {
+      "id": "387",
+      "en_ques": "where in france is sparkling wine produced?",
+      "en_key": "produced, france, sparkling wine",
+      "de_ques": "wo in frankreich wird schaumwein hergestellt?",
+      "de_key": "frankreich, hergestellt, schaumwein",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:wineProduced res:Sparkling_wine ; dbo:location res:France }",
+      "entities": [
+         "Sparkling_wine",
+         "France"
+      ],
+      "relations": [
+         "wineProduced",
+         "location"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:wineProduced res:Sparkling_wine ; dbo:location res:France }"
+   },
+   {
+      "id": "388",
+      "en_ques": "when did boris becker end his active career?",
+      "en_key": "boris becker, end career",
+      "de_ques": "wann hat boris becker seine aktive karriere beendet?",
+      "de_key": "boris becker, aktive karriere, beendet",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?d WHERE { res:Boris_Becker dbo:activeYearsEndDate ?d }",
+      "entities": [
+         "Boris_Becker"
+      ],
+      "relations": [
+         "activeYearsEndDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?d WHERE { res:Boris_Becker dbo:activeYearsEndDate ?d }"
+   },
+   {
+      "id": "389",
+      "en_ques": "which movies starring mickey rourke were directed by guy ritchie?",
+      "en_key": "movies, starring, mickey rourke, directed, guy ritchie",
+      "de_ques": "bei welchen filmen, in denen mickey rourke mitspielt, hat guy ritchie regie gef\u00fchrt?",
+      "de_key": "filme, spielt mit, mickey rourke, regie f\u00fchren, guy ritchie",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Mickey_Rourke ; dbo:director res:Guy_Ritchie }",
+      "entities": [
+         "Mickey_Rourke",
+         "Guy_Ritchie"
+      ],
+      "relations": [
+         "Film",
+         "starring",
+         "director"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Mickey_Rourke ; dbo:director res:Guy_Ritchie }"
+   },
+   {
+      "id": "390",
+      "en_ques": "in which films did julia roberts as well as richard gere play?",
+      "en_key": "film, play, julia roberts, richard gere",
+      "de_ques": "in welchen filmen spielen sowohl julia roberts als auch richard gere mit?",
+      "de_key": "film, mitspielen, julia roberts, richard gere",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Julia_Roberts ; dbo:starring res:Richard_Gere }",
+      "entities": [
+         "Julia_Roberts",
+         "Richard_Gere"
+      ],
+      "relations": [
+         "Film",
+         "starring",
+         "starring"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Julia_Roberts ; dbo:starring res:Richard_Gere }"
+   },
+   {
+      "id": "391",
+      "en_ques": "show me hemingway's autobiography.",
+      "en_key": "autobiography, hemingway",
+      "de_ques": "zeig mir hemmingways autobiographie.",
+      "de_key": "hemmingway, autobiographie",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:author res:Ernest_Hemingway ; dbo:literaryGenre res:Autobiography }",
+      "entities": [
+         "Ernest_Hemingway",
+         "Autobiography"
+      ],
+      "relations": [
+         "author",
+         "literaryGenre"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:author res:Ernest_Hemingway ; dbo:literaryGenre res:Autobiography }"
+   },
+   {
+      "id": "392",
+      "en_ques": "how tall is amazon eve?",
+      "en_key": "amazon eve, tall",
+      "de_ques": "wie gro\u00df ist amazon eve?",
+      "de_key": "amazon eve, gr\u00f6\u00dfe",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?height WHERE { res:Amazon_Eve dbo:height ?height }",
+      "entities": [
+         "Amazon_Eve"
+      ],
+      "relations": [
+         "height"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?height WHERE { res:Amazon_Eve dbo:height ?height }"
+   },
+   {
+      "id": "393",
+      "en_ques": "what are the five boroughs of new york?",
+      "en_key": "five boroughs, new york",
+      "de_ques": "was sind die f\u00fcnf stadtteile von new york?",
+      "de_key": "new york, f\u00fcnf stadtteile",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> SELECT DISTINCT ?uri WHERE { ?uri dbo:governmentType <http://dbpedia.org/resource/Borough_(New_York_City)> }",
+      "entities": [
+         "Borough_(New_York_City)"
+      ],
+      "relations": [
+         "governmentType"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:governmentType dbr:Borough_(New_York_City) }"
+   },
+   {
+      "id": "394",
+      "en_ques": "give me all canadian grunge record labels.",
+      "en_key": "record label, canadian, grunge",
+      "de_ques": "gib mir alle kanadischen grunge-plattenfirmen.",
+      "de_key": "kanadisch, plattenfirma, grunge",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:RecordLabel ; dbo:genre res:Grunge ; dbo:country res:Canada }",
+      "entities": [
+         "Grunge",
+         "Canada"
+      ],
+      "relations": [
+         "RecordLabel",
+         "genre",
+         "country"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:RecordLabel ; dbo:genre res:Grunge ; dbo:country res:Canada }"
+   },
+   {
+      "id": "395",
+      "en_ques": "in which country does the ganges start?",
+      "en_key": "ganges, start, country",
+      "de_ques": "in welchem land entspringt der ganges?",
+      "de_key": "ganges, entspringen, land",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Ganges dbo:sourceCountry ?uri }",
+      "entities": [
+         "Ganges"
+      ],
+      "relations": [
+         "sourceCountry"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Ganges dbo:sourceCountry ?uri }"
+   },
+   {
+      "id": "396",
+      "en_ques": "who is the founder of penguin books?",
+      "en_key": "founder, penguin books",
+      "de_ques": "wer hat penguin books gegr\u00fcndet?",
+      "de_key": "gegr\u00fcndet, penguin books",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Penguin_Books dbo:founder ?uri }",
+      "entities": [
+         "Penguin_Books"
+      ],
+      "relations": [
+         "founder"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Penguin_Books dbo:founder ?uri }"
+   },
+   {
+      "id": "397",
+      "en_ques": "who wrote the game of thrones theme?",
+      "en_key": "writer, game of thrones",
+      "de_ques": "wer hat das titellied f\u00fcr games of thrones geschrieben?",
+      "de_key": "game of thrones, komponist",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Game_of_Thrones dbo:composer ?uri }",
+      "entities": [
+         "Game_of_Thrones"
+      ],
+      "relations": [
+         "composer"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Game_of_Thrones dbo:composer ?uri }"
+   },
+   {
+      "id": "398",
+      "en_ques": "who is the president of eritrea?",
+      "en_key": "president, eritrea",
+      "de_ques": "wer ist der pr\u00e4sident von eritrea?",
+      "de_key": "pr\u00e4sident, eritrea",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Eritrea dbo:leader ?uri ; dbo:leaderTitle 'President'@en }",
+      "entities": [
+         "Eritrea"
+      ],
+      "relations": [
+         "leader",
+         "leaderTitle"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Eritrea dbo:leader ?uri ; dbo:leaderTitle 'President'@en }"
+   },
+   {
+      "id": "399",
+      "en_ques": "in which city did john f. kennedy die?",
+      "en_key": "city, john f. kennedy, die",
+      "de_ques": "in welcher stadt ist john f. kennedy gestorben?",
+      "de_key": "stadt, john f. kennedy, gestorben",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:John_F._Kennedy dbo:deathPlace ?uri . ?uri rdf:type dbo:City }",
+      "entities": [
+         "John_F._Kennedy"
+      ],
+      "relations": [
+         "deathPlace",
+         "City"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:John_F._Kennedy dbo:deathPlace ?uri . ?uri rdf:type dbo:City }"
+   },
+   {
+      "id": "400",
+      "en_ques": "what is the highest mountain in australia?",
+      "en_key": "australia, highest mountain",
+      "de_ques": "was ist der h\u00f6chste berg in australien?",
+      "de_key": "australien, h\u00f6chster berg",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain ; dbo:locatedInArea res:Australia ; dbo:elevation ?elevation } ORDER BY DESC(?elevation) LIMIT 1",
+      "entities": [
+         "Australia"
+      ],
+      "relations": [
+         "Mountain",
+         "locatedInArea",
+         "elevation"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Mountain ; dbo:locatedInArea res:Australia ; dbo:elevation ?elevation } ORDER BY DESC(?elevation) LIMIT 1"
+   },
+   {
+      "id": "401",
+      "en_ques": "who writes the farmers' almanac?",
+      "en_key": "writes, farmers' almanac",
+      "de_ques": "wer schreibt das farmes' almanac?",
+      "de_key": "autor, farmers' almanac",
+      "sparql": "PREFIX dbp: <http://dbpedia.org/property/> SELECT ?uri WHERE { <http://dbpedia.org/resource/Farmers'_Almanac> dbp:editor ?uri }",
+      "entities": [
+         "Farmers'_Almanac"
+      ],
+      "relations": [
+         "editor"
+      ],
+      "fil_sparql": "SELECT ?uri WHERE { dbr:Farmers'_Almanac dbp:editor ?uri }"
+   },
+   {
+      "id": "402",
+      "en_ques": "give me the currency of china.",
+      "en_key": "currency, china",
+      "de_ques": "zeig mir die w\u00e4hrung in china an.",
+      "de_key": "w\u00e4hrung, china",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:China dbo:currency ?uri }",
+      "entities": [
+         "China"
+      ],
+      "relations": [
+         "currency"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:China dbo:currency ?uri }"
+   },
+   {
+      "id": "403",
+      "en_ques": "give me all swedish oceanographers.",
+      "en_key": "swedish, oceanographer",
+      "de_ques": "gib mir alle in schweden geborenen ozeanographen.",
+      "de_key": "schweden, geborene, ozeanographen",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:field res:Oceanography ; dbo:birthPlace res:Sweden }",
+      "entities": [
+         "Oceanography",
+         "Sweden"
+      ],
+      "relations": [
+         "field",
+         "birthPlace"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:field res:Oceanography ; dbo:birthPlace res:Sweden }"
+   },
+   {
+      "id": "404",
+      "en_ques": "in which city are the headquarters of the united nations?",
+      "en_key": "city, headquarters of the united nations",
+      "de_ques": "in welcher stadt ist das hauptquartier der vereinten nationen?",
+      "de_key": "vereinte nationen, hauptquartier, stadt",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { res:Headquarters_of_the_United_Nations dbo:location ?uri . ?uri rdf:type dbo:City }",
+      "entities": [
+         "Headquarters_of_the_United_Nations"
+      ],
+      "relations": [
+         "location",
+         "City"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Headquarters_of_the_United_Nations dbo:location ?uri . ?uri rdf:type dbo:City }"
+   },
+   {
+      "id": "405",
+      "en_ques": "is rita wilson the wife of tom hanks?",
+      "en_key": "rita wilson, wife, tom hanks",
+      "de_ques": "ist rita wilson die ehefrau von tom hanks?",
+      "de_key": "rita wilson, ehefrau, tom hanks",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> ASK WHERE { res:Tom_Hanks dbo:spouse res:Rita_Wilson }",
+      "entities": [
+         "Tom_Hanks",
+         "Rita_Wilson"
+      ],
+      "relations": [
+         "spouse"
+      ],
+      "fil_sparql": "ASK WHERE { res:Tom_Hanks dbo:spouse res:Rita_Wilson }"
+   },
+   {
+      "id": "406",
+      "en_ques": "in which countries do people speak japanese?",
+      "en_key": "which countries, speak, japanese",
+      "de_ques": "in welchen l\u00e4ndern wird japanisch gesprochen?",
+      "de_key": "l\u00e4nder, sprache, japanisch",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country ; dbo:language res:Japanese_language }",
+      "entities": [
+         "Japanese_language"
+      ],
+      "relations": [
+         "Country",
+         "language"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Country ; dbo:language res:Japanese_language }"
+   },
+   {
+      "id": "407",
+      "en_ques": "which of tim burton's films had the highest budget?",
+      "en_key": "highest budget, film, tim burton",
+      "de_ques": "welcher von tim burtons filmen hatte das h\u00f6chste budget?",
+      "de_key": "h\u00f6chstes budget, film, tim burton",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Tim_Burton ; dbo:budget ?b } ORDER BY ?b OFFSET 0 LIMIT 1",
+      "entities": [
+         "Tim_Burton"
+      ],
+      "relations": [
+         "director",
+         "budget"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri dbo:director res:Tim_Burton ; dbo:budget ?b } ORDER BY ?b OFFSET 0 LIMIT 1"
+   },
+   {
+      "id": "408",
+      "en_ques": "which museum in new york has the most visitors?",
+      "en_key": "museum, new york, the most visitors",
+      "de_ques": "welches museum in new york hat die meisten besucher?",
+      "de_key": "museum, new york, die meisten besucher",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Museum ; dbo:location res:New_York_City ; dbo:numberOfVisitors ?num } ORDER BY DESC(?num) OFFSET 0 LIMIT 1",
+      "entities": [
+         "New_York_City"
+      ],
+      "relations": [
+         "Museum",
+         "location",
+         "numberOfVisitors"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Museum ; dbo:location res:New_York_City ; dbo:numberOfVisitors ?num } ORDER BY DESC(?num) OFFSET 0 LIMIT 1"
+   },
+   {
+      "id": "409",
+      "en_ques": "what was the first queen album?",
+      "en_key": "first album, queen",
+      "de_ques": "was war das erste queen-album?",
+      "de_key": "erstes queen-album",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Album ; dbo:artist <http://dbpedia.org/resource/Queen_(band)> ; dbo:releaseDate ?d } ORDER BY ASC(?d) OFFSET 0 LIMIT 1",
+      "entities": [
+         "Queen_(band)"
+      ],
+      "relations": [
+         "Album",
+         "artist",
+         "releaseDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Album ; dbo:artist dbr:Queen_(band) ; dbo:releaseDate ?d } ORDER BY ASC(?d) OFFSET 0 LIMIT 1"
+   },
+   {
+      "id": "410",
+      "en_ques": "what was the first name of the band queens of the stone age?",
+      "en_key": "first name, queens of the stone age",
+      "de_ques": "was war der erste name der band queens of the stone age?",
+      "de_key": "erste name, queens of the stone age",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?name WHERE { res:Queens_of_the_Stone_Age dbo:alias ?name }",
+      "entities": [
+         "Queens_of_the_Stone_Age"
+      ],
+      "relations": [
+         "alias"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?name WHERE { res:Queens_of_the_Stone_Age dbo:alias ?name }"
+   },
+   {
+      "id": "411",
+      "en_ques": "what was the last movie with alec guinness?",
+      "en_key": "alec guinness, last, movie",
+      "de_ques": "was war der letzte film mit alec guinness?",
+      "de_key": "alec guinness, letzter, film",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Alec_Guinness ; dbo:releaseDate ?date } ORDER BY DESC(?date) LIMIT 1",
+      "entities": [
+         "Alec_Guinness"
+      ],
+      "relations": [
+         "Film",
+         "starring",
+         "releaseDate"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { ?uri rdf:type dbo:Film ; dbo:starring res:Alec_Guinness ; dbo:releaseDate ?date } ORDER BY DESC(?date) LIMIT 1"
+   },
+   {
+      "id": "412",
+      "en_ques": "give me all actors starring in last action hero.",
+      "en_key": "actor, starring, last action hero",
+      "de_ques": "gib mir alle schauspieler, die in last action hero mitgespielt haben.",
+      "de_key": "schauspieler, mitspielen, last action hero",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX res: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { res:Last_Action_Hero dbo:starring ?uri }",
+      "entities": [
+         "Last_Action_Hero"
+      ],
+      "relations": [
+         "starring"
+      ],
+      "fil_sparql": "SELECT DISTINCT ?uri WHERE { res:Last_Action_Hero dbo:starring ?uri }"
+   },
+   {
+      "id": "413",
+      "en_ques": "who discovered pluto?",
+      "en_key": "discovered, pluto",
+      "de_ques": "wer hat pluto entdeckt?",
+      "de_key": "pluto, entdeckt",
+      "sparql": "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?uri WHERE { dbr:Pluto dbo:discoverer ?uri }",
+      "entities": [
+         "Pluto"
+      ],
+      "relations": [
+         "discoverer"
+      ],
+      "fil_sparql": "SELECT ?uri WHERE { dbr:Pluto dbo:discoverer ?uri }"
+   }
+]
