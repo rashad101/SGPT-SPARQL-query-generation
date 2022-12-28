@@ -12,7 +12,7 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-### Training
+### 🏋️ Training
 In multiple GPU setting, run the following command:
 ```bash
 python -m torch.distributed.launch train.py --dataset qald9
