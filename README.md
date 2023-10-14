@@ -32,6 +32,8 @@ python train.py --dataset qald9
 python -u eval.py --generate runs/sgpt/lcquad2/ --dataset lcquad2 --generation_params_file config/gpt-2-base/generation_params.json --eval_dataset test  --output_file outputs/predictions_gpt2-base.json
 ```
 
+### 🎲 Hyper-paramters
+Please try the following number of epochs to find the best results: 10,20,30,40 or 70 and the following learning rates: 6e-4 or 6e-5 .
 
 ### 📝 Citation
 If you use the code, please cite the following paper.
