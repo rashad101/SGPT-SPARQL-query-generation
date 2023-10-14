@@ -295,6 +295,8 @@ class METEOR(Metric):
     def update(self, output):
         # hypothesis and reference are assumed to be actual sequences of tokens
         hypothesis, reference = output
+        hypothesis = hypothesis.split()
+        reference = reference.split()
 
         meteor = single_meteor_score(reference, hypothesis, preprocess=normalize)
 
