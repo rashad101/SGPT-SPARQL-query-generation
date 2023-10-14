@@ -272,8 +272,9 @@ def main():
 
 
     args.params = params  # used for saving checkpoints
-    # if fromcommand.epochs!=-1:
-    #     args.params.num_train_epochs = fromcommand.epochs
+    if fromcommand.epochs!=-1:
+        args.num_train_epochs = fromcommand.epochs
+
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     set_default_params(args)
