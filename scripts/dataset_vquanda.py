@@ -177,7 +177,7 @@ class BaseDataset(Dataset):
             #truncated_question = truncate_sequences(truncated_question, self.args.history_max_tokens)
 
             self.examples.append({
-                "question": [tokenized_question[:self.args.history_max_tokens]],
+                "question": [tokenized_question[:self.args.input_max_tokens]],
                 "knowledge": used_knowledge,
                 "postag_ids": pos_ids,
                 "dep_ids": dep_ids,

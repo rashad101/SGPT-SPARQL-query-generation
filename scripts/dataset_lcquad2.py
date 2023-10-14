@@ -175,7 +175,7 @@ class BaseDataset(Dataset):
             tokenized_query = self.tokenizer.convert_tokens_to_ids(self.tokenizer.tokenize(query_text))
 
             self.examples.append({
-                "question": [tokenized_question[:self.args.history_max_tokens]],
+                "question": [tokenized_question[:self.args.input_max_tokens]],
                 "knowledge": used_knowledge,
                 "postag_ids": pos_ids,
                 "dep_ids": dep_ids,

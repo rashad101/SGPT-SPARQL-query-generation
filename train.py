@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 def set_seed(args):
     random.seed(args.seed)
     np.random.seed(args.seed)
-    torch.manual_seed(args.seed)`
+    torch.manual_seed(args.seed)
     if args.n_gpu > 0:
         torch.cuda.manual_seed_all(args.seed)
 
@@ -115,7 +115,6 @@ def train(args, train_dataset, eval_dataset, model: PreTrainedModel, tokenizer: 
                 if args.scheduler=="linear":
                     scheduler.step()
                 else:
-                    #scheduler.step(loss.item())
                     pass
                 optimizer.zero_grad()
                 global_step += 1
