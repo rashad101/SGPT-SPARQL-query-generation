@@ -15,11 +15,11 @@ python -m spacy download en_core_web_sm
 ### 🏋️ Training
 In multiple GPU setting, run the following command:
 ```bash
-python -m torch.distributed.launch train.py --dataset qald9
+python -m torch.distributed.launch train.py --dataset lcquad2 --epochs 40
 ```
 For single GPU:
 ```
-python train.py --dataset qald9
+python train.py --dataset lcquad2 --epochs 40
 ```
 
 - valid dataset names: lcquad2, qald9, vquanda
